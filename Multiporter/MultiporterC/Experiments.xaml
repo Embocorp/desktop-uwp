@@ -1,0 +1,147 @@
+﻿<Page
+    x:Class="MultiporterC.Experiments"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MultiporterC"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Loaded="PageLoaded">
+
+    <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
+               CompactPaneLength="60" OpenPaneLength="300">
+        <SplitView.Pane>
+            <local:NavControl x:Name="NavPanel"></local:NavControl>
+        </SplitView.Pane>
+        <SplitView.Content>
+            <ScrollViewer>
+                <StackPanel Orientation="Vertical" Background="#F0F0F0">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="20, 20, 0, 0">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="My Experiments" 
+                                       FontSize="48" 
+                                       Margin="20, 0, 10, 10" 
+                                       HorizontalAlignment="Left"/>
+                            <Button Content="&#xE8F4;"
+                                    FontFamily="Segoe MDL2 Assets"
+                                    Background="Transparent"
+                                    BorderThickness="0"
+                                    FontSize="36"
+                                    VerticalAlignment="Center"
+                                    Margin="20, 0, 0, 0"
+                                    Click="New_Experiment_Click"
+                                    />
+                            <Popup VerticalOffset="10" HorizontalOffset="0" x:Name="StandardPopup">
+                                <Border BorderBrush="{StaticResource ApplicationForegroundThemeBrush}" 
+                Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
+                BorderThickness="2" Width="400" Height="200">
+                                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <TextBox PlaceholderText="Experiment Name"
+                                                 Margin="0, 10, 0, 20"
+                                                 x:Name="ExperimentName"
+                                                 MinWidth="300"
+                                            />
+                                        <Button Content="Create Experiment" Click="Create_Experiment_Click" HorizontalAlignment="Center"
+                                                Margin="0, 0, 0, 20"/>
+                                        <Button Content="Cancel" Click="ClosePopupClicked" HorizontalAlignment="Center"/>
+                                    </StackPanel>
+                                </Border>
+                            </Popup>
+                        </StackPanel>
+                        <ProgressBar IsIndeterminate="True" 
+                                     Width="200"
+                                     Height="25"
+                                     HorizontalAlignment="Left"
+                                     Visibility="Collapsed"
+                                     x:Name="LocalLoading"/>
+                    </StackPanel>
+                    <GridView HorizontalAlignment="Stretch" 
+                              VerticalAlignment="Stretch" 
+                              x:Name="ExperimentsList"
+                              Margin="20, 0, 0, 0"
+                              SelectionChanged="OpenExperiment">
+                        <GridView.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderThickness="0, 0, 3, 2"
+                                BorderBrush="#E5E5E5"
+                                Margin="20">
+                                    <StackPanel Orientation="Vertical" Width="200">
+                                        <Grid Background="#c0c0c0" Height="200">
+                                            <Image HorizontalAlignment="Stretch" 
+                                                   Source="{Binding BMPThumb}"
+                                                   VerticalAlignment="Center"/>
+                                        </Grid>
+                                        <StackPanel Background="White"
+                                        Padding="10">
+                                            <TextBlock Foreground="Black"
+                                               Text="{Binding Name}"
+                                               FontWeight="Medium"
+                                               TextAlignment="Left"
+                                               FontSize="18"/>
+                                            <TextBlock Foreground="Black"
+                                               FontWeight="Light"
+                                               TextAlignment="Left"
+                                               Text="{Binding Created}"
+                                               FontSize="14"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
+                    </GridView>
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="40, 20, 0, 0">
+                        <TextBlock Text="Online Experiments" FontSize="48" Margin="0, 0, 10, 10" HorizontalAlignment="Left"></TextBlock>
+                        <TextBox TextChanged="TextBox_TextChanged" 
+                                 VerticalAlignment="Bottom" 
+                                 Width="300" 
+                                 HorizontalAlignment="Left" 
+                                 FontSize="18"
+                                 PlaceholderText="Search the Online Repo"/>
+                        <ProgressBar IsIndeterminate="True" 
+                                     Width="200"
+                                     Height="25"
+                                     HorizontalAlignment="Left"
+                                     Visibility="Collapsed"
+                                     x:Name="OnlineLoading"/>
+                    </StackPanel>
+                    <TextBlock Text="Our Recommendations"
+                               Margin="40, 10, 10, 0"
+                               FontSize="16"
+                               FontWeight="Medium"/>
+                    <GridView HorizontalAlignment="Stretch" 
+                              VerticalAlignment="Stretch" 
+                              x:Name="OnlineExperimentsList"
+                              Margin="20, 0, 0, 0"
+                              SelectionChanged="OpenExperiment">
+                        <GridView.ItemTemplate>
+                            <DataTemplate>
+                                <Border BorderThickness="0, 0, 3, 2"
+                                BorderBrush="#E5E5E5"
+                                Margin="20">
+                                    <StackPanel Orientation="Vertical" Width="200">
+                                        <Image HorizontalAlignment="Stretch" 
+                                           Source="Assets/placeholder.png" 
+                                           />
+                                        <StackPanel Background="White"
+                                        Padding="10">
+                                            <TextBlock Foreground="Black"
+                                               Text="{Binding Name}"
+                                               FontWeight="Medium"
+                                               TextAlignment="Left"
+                                               FontSize="18"/>
+                                            <TextBlock Foreground="Black"
+                                               FontWeight="Light"
+                                               TextAlignment="Left"
+                                               Text="{Binding Created}"
+                                               FontSize="14"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </GridView.ItemTemplate>
+                    </GridView>
+                </StackPanel>
+            </ScrollViewer>
+        </SplitView.Content>
+    </SplitView>
+</Page>

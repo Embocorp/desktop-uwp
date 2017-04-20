@@ -1,0 +1,257 @@
+﻿<Page
+    x:Class="MultiporterC.Explorer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MultiporterC"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+
+        <DataTemplate x:Key="textTemplate">
+            <Border BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
+                <StackPanel Background="White" Padding="20" Orientation="Vertical" Width="700">
+                    <Border BorderThickness="0, 0, 0, 1" BorderBrush="#E0E0E0" Margin="0, 0, 0, 10">
+                        <Grid Padding="0, 0, 0, 10">
+                            <TextBlock Text="{Binding Name}" FontSize="24" Foreground="Black" 
+                                       VerticalAlignment="Center" HorizontalAlignment="Left"
+                                       Margin="0, 0, 60, 0" TextWrapping="WrapWholeWords"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" 
+                                        VerticalAlignment="Center"
+                                        Margin="20, 0, 0, 0">
+                                <Button Content="&#xE946;" Background="Transparent"
+                                        FontFamily="Segoe MDL2 Assets"
+                                        FontSize="24"
+                                        Margin="2, 0"/>
+                                <Button x:ConnectionId='2' Content="&#xE70F;"
+                                        Background="Transparent"
+                                        FontFamily="Segoe MDL2 Assets"
+                                        FontSize="24"
+                                        Margin="2, 0"
+                                                               
+                                        Tag="{Binding}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <TextBlock Text="{Binding Content}"
+                               FontSize="18"
+                               Margin="0, 10"
+                               TextWrapping="WrapWholeWords"/>
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dataTemplate"                                 >
+            <Border BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
+                <StackPanel Background="White" Padding="20" Orientation="Vertical" Width="700">
+                    <Border BorderThickness="0, 0, 0, 1" BorderBrush="#E0E0E0" Margin="0, 0, 0, 10">
+                        <Grid Padding="0, 0, 0, 10">
+                            <TextBlock Text="{Binding Name}" FontSize="24" Foreground="Black" 
+                                       VerticalAlignment="Center" HorizontalAlignment="Left"
+                                       Margin="0, 0, 60, 0" TextWrapping="WrapWholeWords"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" 
+                                        VerticalAlignment="Center"
+                                        Margin="20, 0, 0, 0">
+                                <Button Content="&#xE946;" Background="Transparent"
+                                        FontFamily="Segoe MDL2 Assets"
+                                        FontSize="24"
+                                        Margin="2, 0"/>
+                                <Button x:ConnectionId='1' Content="&#xE70F;"
+                                        Background="Transparent"
+                                        FontFamily="Segoe MDL2 Assets"
+                                        FontSize="24"
+                                        Margin="2, 0"
+                                                               
+                                        Tag="{Binding}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <Charting:Chart HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                    Width="600" Height="400" DataContext="{Binding}"
+                                    Title="{Binding Content}"
+                                    >
+                        <Charting:LineSeries Margin="0" 
+                                             DataContext="{Binding}"
+                                             IndependentValuePath="Name" DependentValuePath="Amount" 
+                                             IsSelectionEnabled="True" ItemsSource="{Binding Data}"
+                                             Title="{Binding Series}"
+                                             IndependentValueBinding="{Binding X}"
+                                             DependentValueBinding="{Binding Y}" 
+                                             />
+                    </Charting:Chart>
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+
+        <local:CardListTemplateSelector 
+            TextTemplate="{StaticResource textTemplate}" 
+            DataTemplate="{StaticResource dataTemplate}" 
+            x:Key="CardListTemplateSelector" />
+    </Page.Resources>
+
+    <SplitView x:ConnectionId='3' x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
+               CompactPaneLength="60" OpenPaneLength="300">
+        <SplitView.Pane>
+            <local:NavControl x:ConnectionId='4' x:Name="NavPanel"></local:NavControl>
+        </SplitView.Pane>
+        <SplitView.Content>
+            <ScrollViewer>
+                <StackPanel Orientation="Vertical" Background="#F0F0F0" VerticalAlignment="Stretch">
+                    <Grid HorizontalAlignment="Stretch" Margin="40, 20, 0, 0">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock x:ConnectionId='19' Text="My Experiment" 
+                               FontSize="48" 
+                               Margin="0, 0, 10, 0" 
+                               HorizontalAlignment="Left"
+                               x:Name="ExpName" />
+                            <TextBlock x:ConnectionId='20' Text="Author"
+                                   FontSize="24"
+                                   Foreground="#505050"
+                                   x:Name="ExperimentAuthor"/>
+                            <TextBlock x:ConnectionId='21' Text="Created"
+                                   FontSize="18"
+                                   Foreground="#a0a0a0"
+                                   x:Name="ExperimentCreated"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
+                            <Button VerticalAlignment="Center"
+                                    Content="&#xE713;"
+                                    FontSize="24"
+                                    FontFamily="Segoe MDL2 Assets"
+                                    Background="Transparent" 
+                                    Margin="10, 10, 10, 10" />
+                            <Button x:ConnectionId='18' VerticalAlignment="Center"
+                                    Content="&#xE768;"
+                                    FontFamily="Segoe MDL2 Assets"
+                                    FontSize="24"
+                                    Background="Transparent" 
+                                    Margin="10, 10, 20, 10" 
+                                                      />
+                        </StackPanel>
+                    </Grid>
+                    <Pivot x:ConnectionId='5' x:Name="RootPivot" Margin="20, 20, 20, 20" VerticalAlignment="Stretch">
+                        <PivotItem Header="Problem" VerticalAlignment="Stretch">
+                            <StackPanel Orientation="Vertical" Padding="10">
+                                <ListView x:ConnectionId='16' x:Name="ProblemCards"
+                                          SelectionMode="None"
+                                          Margin="0, 0, 0, 50"
+                                          ItemTemplateSelector="{StaticResource CardListTemplateSelector}" />
+                                <Button x:ConnectionId='17' HorizontalAlignment="Center"
+                                    Content="Add New Card"
+                                    Background="Transparent"
+                                    Foreground="#909090"
+                                    BorderThickness="0"
+                                    FontSize="18"
+                                    VerticalAlignment="Bottom"
+                                    Margin="20, 0, 0, 0"
+                                    Padding="10"
+                                                          >
+                                </Button>
+                            </StackPanel>
+                        </PivotItem>
+                        <PivotItem Header="Hypothesis">
+                            <StackPanel Orientation="Vertical" Padding="10">
+                                <ListView x:ConnectionId='14' x:Name="HypothesisCards"
+                                          SelectionMode="None"
+                                          Margin="0, 0, 0, 50"
+                                          ItemTemplateSelector="{StaticResource CardListTemplateSelector}" />
+                                <Button x:ConnectionId='15' HorizontalAlignment="Center"
+                                    Content="Add New Card"
+                                    Background="Transparent"
+                                    Foreground="#909090"
+                                    BorderThickness="0"
+                                    FontSize="18"
+                                    VerticalAlignment="Bottom"
+                                    Margin="20, 0, 0, 0"
+                                    Padding="10"
+                                                          >
+                                </Button>
+                            </StackPanel>
+                        </PivotItem>
+                        <PivotItem Header="Materials">
+                            <StackPanel Orientation="Vertical" Padding="10">
+                                <ListView x:ConnectionId='12' x:Name="MaterialsCards"
+                                        SelectionMode="None"
+                                        Margin="0, 0, 0, 50"
+                                        ItemTemplateSelector="{StaticResource CardListTemplateSelector}">
+                                </ListView>
+                                <Button x:ConnectionId='13' HorizontalAlignment="Center"
+                                    Content="Add New Card"
+                                    Background="Transparent"
+                                    Foreground="#909090"
+                                    BorderThickness="0"
+                                    FontSize="18"
+                                    VerticalAlignment="Bottom"
+                                    Margin="20, 0, 0, 0"
+                                    Padding="10"
+                                                          >
+                                </Button>
+                            </StackPanel>
+                        </PivotItem>
+                        <PivotItem Header="Experiment">
+                            <StackPanel Orientation="Vertical" Padding="10">
+                                <ListView x:ConnectionId='10' x:Name="ExperimentCards"
+                                          SelectionMode="None"
+                                          Margin="0, 0, 0, 50"
+                                          ItemTemplateSelector="{StaticResource CardListTemplateSelector}" />
+                                <Button x:ConnectionId='11' HorizontalAlignment="Center"
+                                    Content="Add New Card"
+                                    Background="Transparent"
+                                    Foreground="#909090"
+                                    BorderThickness="0"
+                                    FontSize="18"
+                                    VerticalAlignment="Bottom"
+                                    Margin="20, 0, 0, 0"
+                                    Padding="10"
+                                                          >
+                                </Button>
+                            </StackPanel>
+                        </PivotItem>
+                        <PivotItem Header="Data Analysis">
+                            <StackPanel Orientation="Vertical" Padding="10">
+                                <ListView x:ConnectionId='8' x:Name="DataAnalysisCards"
+                                          SelectionMode="None"
+                                          Margin="0, 0, 0, 50"
+                                          ItemTemplateSelector="{StaticResource CardListTemplateSelector}">
+                                </ListView>
+                                <Button x:ConnectionId='9' HorizontalAlignment="Center"
+                                    Content="Add New Card"
+                                    Background="Transparent"
+                                    Foreground="#909090"
+                                    BorderThickness="0"
+                                    FontSize="18"
+                                    VerticalAlignment="Bottom"
+                                    Margin="20, 0, 0, 0"
+                                    Padding="10"
+                                                          >
+                                </Button>
+                            </StackPanel>
+                        </PivotItem>
+                        <PivotItem Header="Conclusions">
+                            <StackPanel Orientation="Vertical" Padding="10">
+                                <ListView x:ConnectionId='6' x:Name="ConclusionsCards"
+                                          SelectionMode="None"
+                                          Margin="0, 0, 0, 50"
+                                          ItemTemplateSelector="{StaticResource CardListTemplateSelector}"/>
+                                <Button x:ConnectionId='7' HorizontalAlignment="Center"
+                                    Content="Add New Card"
+                                    Background="Transparent"
+                                    Foreground="#909090"
+                                    BorderThickness="0"
+                                    FontSize="18"
+                                    VerticalAlignment="Bottom"
+                                    Margin="20, 0, 0, 0"
+                                    Padding="10"
+                                                          >
+                                </Button>
+                            </StackPanel>
+                        </PivotItem>
+                    </Pivot>
+                </StackPanel>
+            </ScrollViewer>
+        </SplitView.Content>
+    </SplitView>
+</Page>
+

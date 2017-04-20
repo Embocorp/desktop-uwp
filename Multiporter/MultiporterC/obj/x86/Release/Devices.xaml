@@ -1,0 +1,117 @@
+﻿<Page
+    x:Class="MultiporterC.Devices"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MultiporterC"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <SplitView x:ConnectionId='1' x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
+               CompactPaneLength="60" OpenPaneLength="300">
+        <SplitView.Pane>
+            <local:NavControl x:ConnectionId='2' x:Name="NavPanel"                         ></local:NavControl>
+        </SplitView.Pane>
+        <SplitView.Content>
+            <Grid Background="#F0F0F0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+
+                <Border BorderThickness="0, 0, 3, 0" BorderBrush="#b0b0b0">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Padding="30, 20, 20, 20" Grid.Column="0" Margin="0,2,0,-2">
+                        <TextBlock Text="Your Devices" FontSize="48" Margin="0, 20, 0, 0"></TextBlock>
+                        <TextBlock Text="You have no configured devices" Foreground="#b0b0b0" Margin="10, 20, 0, 0"/>
+                        <StackPanel Orientation="Horizontal" Margin="0, 50, 0, 0">
+                            <ProgressRing IsActive="True" Foreground="Black" Width="25" Height="25" Margin="0, 0, 10, 0" VerticalAlignment="Center"/>
+                            <TextBlock TextWrapping="Wrap"  Text="We'll automatically search for new devices..." VerticalAlignment="Center" FontSize="18"/>
+                        </StackPanel>
+                        <ListView x:ConnectionId='13' x:Name="foundDevices"                                           Margin="0, 20">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="0, 10, 0, 10">
+                                        <TextBlock Text="{Binding Name}"
+                                                   FontSize="18"
+                                                   Foreground="Black"
+                                                   VerticalAlignment="Top"
+                                                   HorizontalAlignment="Left"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackPanel>
+                </Border>
+                <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Padding="20, 20, 20, 20" Grid.Column="1">
+                    <StackPanel x:ConnectionId='3' x:Name="deviceInfo" Orientation="Vertical" HorizontalAlignment="Stretch" 
+                                VerticalAlignment="Center" Padding="30, 30, 30, 30">
+                        <TextBlock x:ConnectionId='12' x:Name="Placeholder"  Text="No device selected" TextAlignment="Center" 
+                                   HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Visible" />
+                    </StackPanel>
+                    <ScrollViewer>
+                        <StackPanel x:ConnectionId='4' x:Name="deviceInfoForm" Orientation="Vertical" HorizontalAlignment="Stretch" 
+                                    VerticalAlignment="Top" Visibility="Collapsed">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="0, 10, 0, 10">
+                                <TextBlock Text="Device Name" FontSize="18" Foreground="#909090"></TextBlock>
+                                <TextBlock x:ConnectionId='11' x:Name="deviceName" Text="Placeholder" FontSize="36"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="0, 10, 30, 10">
+                                <TextBlock Text="Device Type" FontSize="14" Foreground="#909090"></TextBlock>
+                                <TextBlock x:ConnectionId='10' x:Name="deviceType" Text="Placeholder" FontSize="20"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="0, 10, 30, 10">
+                                <TextBlock Text="Device License" FontSize="14" Foreground="#909090"></TextBlock>
+                                <TextBlock x:ConnectionId='9' x:Name="deviceLicense" Text="Placeholder" FontSize="20"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="0, 10, 20, 10">
+                                <TextBlock Text="Device Owner" FontSize="14" Foreground="#909090"></TextBlock>
+                                <TextBlock x:ConnectionId='8' x:Name="deviceOwner" Text="Placeholder" FontSize="20"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="0, 10, 0, 10">
+                                <TextBlock Text="Number of Sensors" FontSize="14" Foreground="#909090"></TextBlock>
+                                <TextBlock x:ConnectionId='7' x:Name="numberSensor" Text="Placeholder" FontSize="20"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="0, 10, 0, 10">
+                                <TextBlock Text="Sensors" FontSize="14" Foreground="#909090"></TextBlock>
+                                <ListView x:ConnectionId='6' HorizontalAlignment="Stretch" 
+                                          x:Name="sensorList"
+                                                                              
+                                          Margin="0, 0, 0, 20">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Margin="0, 10, 0, 10">
+                                                <TextBlock Text="{Binding Name}"
+                                                           FontSize="20"
+                                                           Foreground="Black"/>
+                                                <TextBlock Text="{Binding Part}"
+                                                           FontWeight="Light"
+                                                           FontSize="14"
+                                                           Foreground="Black"/>
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0, 20">
+                                <Button Content="Save Device" 
+                                    FontSize="18"
+                                    Foreground="Black"
+                                    Background="#A0A0A0"
+                                    Padding="10"
+                                    Margin="0, 0, 20, 0"/>
+                                <Button x:ConnectionId='5' Content="Connect" 
+                                    FontSize="18"
+                                    Foreground="Black"
+                                    Background="#A0A0A0"
+                                    Padding="10"
+                                    Margin="20, 0"
+                                                         />     
+                            </StackPanel>
+                        </StackPanel>
+                    </ScrollViewer>
+                </Grid>
+            </Grid>
+        </SplitView.Content>
+    </SplitView>
+</Page>
+

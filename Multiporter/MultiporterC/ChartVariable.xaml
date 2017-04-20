@@ -1,0 +1,57 @@
+﻿<ContentDialog
+    x:Class="MultiporterC.ChartVariable"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MultiporterC"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Choose Chart Variables"
+    PrimaryButtonText="OK"
+    SecondaryButtonText="Cancel"
+    PrimaryButtonClick="ContentDialog_PrimaryButtonClick"
+    SecondaryButtonClick="ContentDialog_SecondaryButtonClick">
+
+    <StackPanel Orientation="Vertical">
+        <TextBlock Text="Independent Variable (X-Axis)"
+                   FontSize="14"
+                   FontWeight="SemiLight"
+                   Margin="0, 10, 0, 5"/>
+        <Button Foreground="{x:Bind IF, Mode=OneWay}"
+                FontSize="18"
+                Background="Transparent"
+                HorizontalAlignment="Center"
+                Padding="0"
+                Click="Independent_Click">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="{x:Bind Path=IndependentType, Mode=OneWay}"
+                           HorizontalAlignment="Left" />
+                <TextBlock Text="&#xE011;"
+                           FontSize="14"
+                           FontFamily="Segoe MDL2 Assets"
+                           HorizontalAlignment="Center"
+                           Margin="0, 0, 0, 0"/>
+            </StackPanel>
+        </Button>
+        <TextBlock Text="Dependent Variable (Y-Axis)"
+                   FontSize="14"
+                   FontWeight="SemiLight"
+                   Margin="0, 10, 0, 5"/>
+        <Button Foreground="{x:Bind DF, Mode=OneWay}"
+                FontSize="18"
+                Background="Transparent"
+                HorizontalAlignment="Center"
+                Padding="0"
+                Click="Dependent_Click">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="{x:Bind Path=DependentType, Mode=OneWay}"
+                           HorizontalAlignment="Center" />
+                <TextBlock Text="&#xE011;"
+                           FontSize="14"
+                           FontFamily="Segoe MDL2 Assets"
+                           HorizontalAlignment="Center"
+                           Margin="0, 0, 0, 0"/>
+            </StackPanel>
+        </Button>
+    </StackPanel>
+</ContentDialog>

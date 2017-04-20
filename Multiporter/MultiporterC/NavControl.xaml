@@ -1,0 +1,44 @@
+﻿<UserControl
+    x:Class="MultiporterC.NavControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MultiporterC"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <StackPanel Background="#0071C1">
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" BorderThickness="0"
+                    Width="60" Height="60" Background="Transparent" Click="HamburgerButton_Click" FontSize="24" Foreground="White"/>
+            <TextBlock Text="Menu" FontSize="20" VerticalAlignment="Center" Foreground="White" Margin="10, 0, 0, 0"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="MenuButtonHome" FontFamily="Segoe MDL2 Assets" Content="&#xE10F;" BorderThickness="0"
+                    Width="60" Height="60" FontSize="24" Foreground="White" Background="Transparent" Click="HomeNav_Click"/>
+            <TextBlock Text="Home" FontSize="20" VerticalAlignment="Center" Foreground="White" Margin="10, 0, 0, 0" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="MenuButtonExperiment" FontFamily="Assets/fontello.ttf#fontello" Content="&#xE800;" BorderThickness="0"
+                        Width="60" Height="60" Background="Transparent" FontSize="24" Foreground="White" Click="ExpNav_Click"/>
+            <TextBlock Text="My Experiments" FontSize="20" VerticalAlignment="Center" Foreground="White" Margin="10, 0, 0, 0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="MenuButtonDevices" FontFamily="Assets/fontello.ttf#fontello" Content="&#xE801;" BorderThickness="0"
+                        Width="60" Height="60" FontSize="24" Foreground="White" Background="Transparent" Click="DevNav_Click"/>
+            <TextBlock Text="My Devices" FontSize="20" VerticalAlignment="Center" Foreground="White" Margin="10, 0, 0, 0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="MenuButtonAccount" FontFamily="Segoe MDL2 Assets" Content="&#xE77B;" BorderThickness="0"
+                        Width="60" Height="60" FontSize="24" Foreground="White" Background="Transparent"/>
+            <TextBlock Text="My Account" FontSize="20" VerticalAlignment="Center" Foreground="White" Margin="10, 0, 0, 0"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="MenuButtonSettings" FontFamily="Assets/fontello.ttf#fontello" Content="&#xE802;" BorderThickness="0"
+                        Width="60" Height="60" FontSize="24" Foreground="White" Background="Transparent"/>
+            <TextBlock Text="Settings" FontSize="20" VerticalAlignment="Center" Foreground="White" Margin="10, 0, 0, 0"/>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

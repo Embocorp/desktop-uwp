@@ -1,0 +1,16 @@
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bin\Debug\ReverseMap\resources.pri
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bin\Debug\AppxManifest.xml
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bin\Debug\Multiporter.build.appxrecipe
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\ResourceHandlingTask.state
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\priconfig.xml
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\priconfig.xml.intermediate
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\layout.resfiles
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\layout.resfiles.intermediate
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\resources.resfiles
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\resources.resfiles.intermediate
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\pri.resfiles
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\pri.resfiles.intermediate
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\qualifiers.txt
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\qualifiers.txt.intermediate
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\ProjectArchitectures.txt

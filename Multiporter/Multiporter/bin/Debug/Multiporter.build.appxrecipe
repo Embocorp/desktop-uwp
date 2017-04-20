@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-K3O5RTC</Machine>
+    <WindowsUser>Iggy</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>c56788d5-6163-4d8b-97b3-190dadbe03b0</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Iggy</PackageIdentityPublisher>
+    <IntermediateOutputPath>c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bld\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\experiments.html">
+      <PackagePath>experiments.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\index.html">
+      <PackagePath>index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\BadgeLogo.scale-100.png">
+      <PackagePath>images\BadgeLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\BadgeLogo.scale-125.png">
+      <PackagePath>images\BadgeLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\BadgeLogo.scale-150.png">
+      <PackagePath>images\BadgeLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\BadgeLogo.scale-200.png">
+      <PackagePath>images\BadgeLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\BadgeLogo.scale-400.png">
+      <PackagePath>images\BadgeLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\LargeTile.scale-100.png">
+      <PackagePath>images\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\LargeTile.scale-125.png">
+      <PackagePath>images\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\LargeTile.scale-150.png">
+      <PackagePath>images\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\LargeTile.scale-200.png">
+      <PackagePath>images\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\LargeTile.scale-400.png">
+      <PackagePath>images\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\LockScreenLogo.scale-200.png">
+      <PackagePath>images\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\SmallTile.scale-100.png">
+      <PackagePath>images\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\SmallTile.scale-125.png">
+      <PackagePath>images\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\SmallTile.scale-150.png">
+      <PackagePath>images\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\SmallTile.scale-200.png">
+      <PackagePath>images\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\SmallTile.scale-400.png">
+      <PackagePath>images\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\splashscreen.scale-125.png">
+      <PackagePath>images\splashscreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\splashscreen.scale-150.png">
+      <PackagePath>images\splashscreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\SplashScreen.scale-200.png">
+      <PackagePath>images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\splashscreen.scale-400.png">
+      <PackagePath>images\splashscreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square150x150Logo.scale-125.png">
+      <PackagePath>images\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square150x150Logo.scale-150.png">
+      <PackagePath>images\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square150x150Logo.scale-200.png">
+      <PackagePath>images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square150x150Logo.scale-400.png">
+      <PackagePath>images\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>images\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>images\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>images\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>images\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.scale-125.png">
+      <PackagePath>images\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.scale-150.png">
+      <PackagePath>images\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.scale-200.png">
+      <PackagePath>images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.scale-400.png">
+      <PackagePath>images\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.targetsize-16.png">
+      <PackagePath>images\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.targetsize-24.png">
+      <PackagePath>images\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.targetsize-256.png">
+      <PackagePath>images\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.targetsize-32.png">
+      <PackagePath>images\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Square44x44Logo.targetsize-48.png">
+      <PackagePath>images\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\StoreLogo.png">
+      <PackagePath>images\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Wide310x150Logo.scale-125.png">
+      <PackagePath>images\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Wide310x150Logo.scale-150.png">
+      <PackagePath>images\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Wide310x150Logo.scale-200.png">
+      <PackagePath>images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\images\Wide310x150Logo.scale-400.png">
+      <PackagePath>images\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\js\main.js">
+      <PackagePath>js\main.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="c:\users\iggy\documents\visual studio 2017\Projects\Multiporter\Multiporter\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

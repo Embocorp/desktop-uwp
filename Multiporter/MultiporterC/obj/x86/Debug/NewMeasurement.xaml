@@ -1,0 +1,25 @@
+﻿<ContentDialog x:ConnectionId='1' x:Class="MultiporterC.NewMeasurement"
+               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+               xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+               xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+               xmlns:local="using:MultiporterC"
+               xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+               x:Name="ContentDialog"
+               Title="Create a Custom Measurement"
+                                                                    
+               PrimaryButtonText="Save"
+                                                                        
+               SecondaryButtonText="Cancel"
+               mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical">
+        <TextBlock Text="Measurement Name" Margin="0, 10, 0, 0"/>
+        <TextBox Text="{Binding ElementName=ContentDialog, Path=MeasurementName, Mode=TwoWay}"
+                 FontSize="18"
+                 Margin="0, 0, 0, 10"/>
+        <TextBlock Text="Measurement Unit" />
+        <TextBox Text="{Binding ElementName=ContentDialog, Path=UnitName, Mode=TwoWay}"
+                 FontSize="18"/>
+    </StackPanel>
+</ContentDialog>
+
