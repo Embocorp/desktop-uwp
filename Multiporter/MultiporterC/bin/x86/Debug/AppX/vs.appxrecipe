@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>d5e6f5da-6b46-41d8-9c75-79af38da7fcb</PackageIdentityName>
     <PackageIdentityPublisher>CN=Iggy</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>73F9DB8B621686995F5D93D14BF96253F2BC3B32ABE0C6D88ACC81192F66CA91</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.embocorp.multiporter.windows_0.1.5.0_x86__vstz0q2f6w5er</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.embocorp.multiporter.windows_vstz0q2f6w5er!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-17T23:34:28.568</Modified>
+      <Modified>2017-04-20T14:35:28.560</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\bin\x86\Debug\MultiporterC.exe">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\bin\x86\Debug\MultiporterC.exe">
       <PackagePath>entrypoint\MultiporterC.exe</PackagePath>
-      <Modified>2017-04-17T23:34:27.583</Modified>
+      <Modified>2017-04-20T14:35:24.294</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PALBOTICS\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -503,244 +503,244 @@
       <PackagePath>WinRTXamlToolkit.Controls.DataVisualization.dll</PackagePath>
       <Modified>2017-02-12T17:18:52.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\fontello.ttf">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\fontello.ttf">
       <PackagePath>Assets\fontello.ttf</PackagePath>
       <Modified>2017-04-02T01:54:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Images\constant.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Images\constant.png">
       <PackagePath>Images\constant.png</PackagePath>
       <Modified>2017-04-17T18:52:47.258</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Images\linear.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Images\linear.png">
       <PackagePath>Images\linear.png</PackagePath>
       <Modified>2017-04-17T18:52:47.267</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Images\negative.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Images\negative.png">
       <PackagePath>Images\negative.png</PackagePath>
       <Modified>2017-04-17T18:52:47.274</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\splash.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\splash.png">
       <PackagePath>splash.png</PackagePath>
       <Modified>2016-11-21T04:57:15.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\LargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\LargeTile.scale-125.png">
       <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\LargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\LargeTile.scale-150.png">
       <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\placeholder.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\placeholder.png">
       <PackagePath>Assets\placeholder.png</PackagePath>
       <Modified>2017-04-03T21:05:25.916</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\SmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\SmallTile.scale-125.png">
       <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\SmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\SmallTile.scale-150.png">
       <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:40:21.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:40:21.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:40:21.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:40:21.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square150x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square150x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Wide310x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Wide310x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-04-01T20:35:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:40:21.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-01T20:35:50.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-02T01:32:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-04-02T01:21:19.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\bin\x86\Debug\MultiporterC.xr.xml">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\bin\x86\Debug\MultiporterC.xr.xml">
       <PackagePath>MultiporterC.xr.xml</PackagePath>
       <Modified>2017-04-17T23:13:29.818</Modified>
     </AppxPackagedFile>
@@ -764,14 +764,14 @@
       <PackagePath>WinRTXamlToolkit.Controls.DataVisualization\Properties\WinRTXamlToolkit.Controls.DataVisualization.rd.xml</PackagePath>
       <Modified>2017-02-12T17:18:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-17T23:25:29.863</Modified>
+      <Modified>2017-04-20T14:35:27.293</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PALBOTICS\Google Drive\Symbio\Code\Desktop\Windows\Windows 10\Multiporter\MultiporterC\bin\x86\Debug\Core\MultiporterC.exe">
+    <AppxPackagedFile Include="C:\Users\PALBOTICS\Documents\embi\desktop-uwp\Multiporter\MultiporterC\bin\x86\Debug\Core\MultiporterC.exe">
       <PackagePath>MultiporterC.exe</PackagePath>
-      <Modified>2017-04-17T23:34:28.558</Modified>
+      <Modified>2017-04-20T14:35:28.523</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
