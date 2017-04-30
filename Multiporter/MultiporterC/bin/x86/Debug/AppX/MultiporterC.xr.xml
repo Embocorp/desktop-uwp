@@ -9,7 +9,6 @@
     <RootPropertyPathName Name="Y" />
     <RootPropertyPathName Name="Unit_Name" />
     <RootPropertyPathName Name="Description" />
-    <RootPropertyPathName Name="Content" />
     <RootPropertyPathName Name="UnitName" />
     <RootPropertyPathName Name="MeasurementName" />
   </Roots.PropertyPathNames>
@@ -180,6 +179,7 @@
       <RootProperty Name="Source" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
@@ -191,7 +191,12 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="Text" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="AcceptsReturn" />
+      <RootProperty Name="TextAlignment" />
       <RootEvent Name="TextChanged" />
+      <RootEvent Name="LostFocus" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressBar">
       <RootProperty Name="IsIndeterminate" />
@@ -213,6 +218,7 @@
       <RootProperty Name="DataTemplate" />
       <RootProperty Name="VariableTemplate" />
       <RootProperty Name="QuantitativeTemplate" />
+      <RootProperty Name="MaterialTemplate" />
     </RootType>
     <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart">
       <RootProperty Name="HorizontalAlignment" />
@@ -235,6 +241,9 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
       <RootProperty Name="Angle" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Imaging.BitmapImage">
+      <RootProperty Name="UriSource" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.MenuFlyout">
       <RootProperty Name="Items" />

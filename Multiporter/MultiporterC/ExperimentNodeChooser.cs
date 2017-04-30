@@ -16,6 +16,9 @@ namespace MultiporterC
             {
                 items = new NodeType[]
                 {
+                    new NodeType("Background",
+                        new ExperimentNode("Background", "", sel),
+                        "The background contains all pertinent information related to your investigation.  Often it is the information which inspired you to start the experiment or information that is crtical to known before starting the experiment."),
                     new NodeType("Experimental Problem", 
                         new ExperimentNode("Experimental Problem", "", sel),
                         "The main problem or question that your experiment is trying to get an answer to."),
@@ -52,7 +55,7 @@ namespace MultiporterC
                 items = new NodeType[]
                 {
                     new NodeType("Material", 
-                        new ExperimentNode("Material", "", sel),
+                        new MaterialNode("junk"),
                         "An object or tool used for your experiment")
                 };
             }

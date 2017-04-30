@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -16,6 +17,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using WinRTXamlToolkit.Controls.DataVisualization.Charting;
 
@@ -166,61 +168,6 @@ namespace MultiporterC
             Exp.Save();
         }
 
-        public async void Edit_Card_Click(object sender, RoutedEventArgs e)
-        {
-            if (Playing == true)
-            {
-                var messageDialog = new MessageDialog("You can't edit your experiment while it is running");
-                messageDialog.Commands.Add(new UICommand("OK"));
-                messageDialog.CancelCommandIndex = 0;
-                await messageDialog.ShowAsync();
-            }
-            else
-            {
-                Button butt = (Button)sender;
-                object target = butt.Tag;
-                object parent;
-                UIElementCollection children;
-                Button del = new Button()
-                {
-                    FontFamily = new FontFamily("Segoe MDL2 Assets"),
-                    Content = "\uE74D",
-                    Name = "del",
-                    Tag = butt.Tag,
-                    FontSize = 24,
-                    BorderThickness = new Thickness(0),
-                    Background = new SolidColorBrush(Colors.Transparent),
-                    Margin = new Thickness(2, 0, 0, 0)
-                };
-                del.Click += Delete_Card_Click;
-
-                ((StackPanel)butt.Parent).Children.Add(del);
-
-                butt.Content = "\uE8FB";
-                butt.Click -= Edit_Card_Click;
-                butt.Click += Save_Card_Click;
-                parent = (StackPanel)((Border)((Grid)((StackPanel)butt.Parent).Parent).Parent).Parent;
-                children = ((StackPanel)parent).Children;              
-
-                foreach (object o in children)
-                {
-                    if (o.GetType() == typeof(TextBlock))
-                    {
-                        TextBlock t = (TextBlock)o;
-                        t.Visibility = Visibility.Collapsed;
-                        TextBox box = new TextBox()
-                        {
-                            Text = t.Text,
-                            FontSize = t.FontSize,
-                            BorderThickness = new Thickness(2),
-                            TextWrapping = TextWrapping.Wrap
-                        };
-                        children.Add(box);
-                    }
-                }
-            }
-        }
-
         public T GetAncestorOfType<T>(FrameworkElement child) where T : FrameworkElement
         {
             var parent = VisualTreeHelper.GetParent(child);
@@ -231,55 +178,7 @@ namespace MultiporterC
 
         public void Save_Card_Click(object sender, RoutedEventArgs e)
         {
-            Button butt = (Button)sender;
-            StackPanel butt_parent = (StackPanel)butt.Parent;
-            StackPanel parent = (StackPanel)((Border)((Grid)((StackPanel)butt.Parent).Parent).Parent).Parent;
-            ExperimentNode changed = (ExperimentNode)butt.Tag;
-
-            ((Button)sender).Content = "\uE70F";
-            ((Button)sender).Click -= Save_Card_Click;
-            ((Button)sender).Click += Edit_Card_Click;
-            string newText = "";
-
-            foreach (object o in butt_parent.Children)
-            {
-                if (o.GetType() == typeof(Button))
-                {
-                    Button b = (Button)o;
-                    if (((String)b.Name).Equals("del"))
-                    {
-                        butt_parent.Children.Remove(b);
-                    }
-                }
-            }
-
-            foreach (object o in parent.Children)
-            {
-                if (o.GetType() == typeof(TextBlock))
-                {
-                    TextBlock t = (TextBlock)o;
-                    t.Visibility = Visibility.Visible;
-                }
-                if (o.GetType() == typeof(TextBox))
-                {
-                    TextBox box = (TextBox)o;
-                    newText = box.Text;
-                    parent.Children.Remove(box);
-                }
-            }
-            foreach (object o in parent.Children)
-            {
-                if (o.GetType() == typeof(TextBlock))
-                {
-                    TextBlock t = (TextBlock)o;
-                    t.Visibility = Visibility.Visible;
-                    t.Text = newText;
-                }
-            }
-            changed.Content = newText;
-
             Exp.Save();
-
         }
 
         public async void Play_Click(object sender, RoutedEventArgs e)
@@ -733,6 +632,40 @@ namespace MultiporterC
                 menu.Items.Add(item);
             }
             menu.ShowAt(b);
+        }
+
+        public async void Material_Image_Click (object sender, RoutedEventArgs e)
+        {
+            Button b = sender as Button;
+            var picker = new Windows.Storage.Pickers.FileOpenPicker();
+            picker.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
+            picker.SuggestedStartLocation =
+                Windows.Storage.Pickers.PickerLocationId.PicturesLibrary;
+            picker.FileTypeFilter.Add(".jpg");
+            picker.FileTypeFilter.Add(".jpeg");
+            picker.FileTypeFilter.Add(".png");
+            picker.FileTypeFilter.Add(".bmp");
+
+            Windows.Storage.StorageFile file = await picker.PickSingleFileAsync();
+            if (file != null)
+            {
+                await ((MaterialNode)b.DataContext).AddImage(file);
+                Exp.Save();
+            }
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string output = "";
+            foreach (char c in ((TextBox)sender).Text)
+            {
+                if (c >= '0' && c <= '9')
+                {
+                    output = output + c;
+                }
+                    
+            }
+            ((TextBox)sender).Text = output;
         }
     }
 }

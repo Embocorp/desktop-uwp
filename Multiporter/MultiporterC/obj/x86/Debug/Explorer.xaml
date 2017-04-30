@@ -10,46 +10,50 @@
     xmlns:common="using:Common">
 
     <Page.Resources>
-
+        
         <DataTemplate x:Key="textTemplate"
                                                        >
-            <Border x:ConnectionId='25' BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
+            <Border x:ConnectionId='35' BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
                 <StackPanel Background="White" Padding="20" Orientation="Vertical" Width="700">
                     <Border BorderThickness="0, 0, 0, 1" BorderBrush="#E0E0E0" Margin="0, 0, 0, 10">
                         <Grid Padding="0, 0, 0, 10">
-                            <TextBlock x:ConnectionId='26'                      FontSize="24" Foreground="Black" 
+                            <TextBlock x:ConnectionId='37'                      FontSize="24" Foreground="Black" 
                                        VerticalAlignment="Center" HorizontalAlignment="Left"
                                        Margin="0, 0, 60, 0" TextWrapping="WrapWholeWords"/>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" 
                                         VerticalAlignment="Center"
                                         Margin="20, 0, 0, 0">
-                                <Button x:ConnectionId='27' Content="&#xE946;" Background="Transparent"
+                                <Button x:ConnectionId='38' Content="&#xE946;" Background="Transparent"
                                         FontFamily="Segoe MDL2 Assets"
                                         FontSize="24"
                                         Margin="2, 0"
                                                                   
                                                                  />
-                                <Button x:ConnectionId='28' Content="&#xE70F;"
+                                <Button x:ConnectionId='39' Content="&#xE74D;"
                                         Background="Transparent"
                                         FontFamily="Segoe MDL2 Assets"
                                         FontSize="24"
                                         Margin="2, 0"
-                                                               
-                                        Tag="{Binding}"/>
+                                                                 
+                                                      />
                             </StackPanel>
                         </Grid>
                     </Border>
-                    <TextBlock Text="{Binding Content}"
-                               FontSize="18"
-                               Margin="0, 10"
-                               TextWrapping="WrapWholeWords"/>
+                    <TextBox x:ConnectionId='36'                                     
+                                                            
+                                                        
+                             FontSize="18"
+                             Margin="0, 10"
+                             BorderThickness="0,0,0,2"
+                             TextWrapping="Wrap"
+                             AcceptsReturn="True"/>
                 </StackPanel>
             </Border>
         </DataTemplate>
 
         <DataTemplate x:Key="variableTemplate"
                                                      >
-            <Border x:ConnectionId='19' BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
+            <Border x:ConnectionId='29' BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
                 <StackPanel Background="White" Padding="20" Orientation="Vertical" Width="700">
                     <Border BorderThickness="0, 0, 0, 1" BorderBrush="#E0E0E0" Margin="0, 0, 0, 10">
                         <Grid Padding="0, 0, 0, 10">
@@ -59,18 +63,18 @@
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" 
                                         VerticalAlignment="Center"
                                         Margin="20, 0, 0, 0">
-                                <Button x:ConnectionId='23' Content="&#xE946;" Background="Transparent"
+                                <Button x:ConnectionId='33' Content="&#xE946;" Background="Transparent"
                                         FontFamily="Segoe MDL2 Assets"
                                         FontSize="24"
                                         Margin="2, 0"
                                         Tag="{Binding Description}"
                                                                  />
-                                <Button x:ConnectionId='24' Content="&#xE70F;"
+                                <Button x:ConnectionId='34' Content="&#xE74D;"
                                         Background="Transparent"
                                         FontFamily="Segoe MDL2 Assets"
                                         FontSize="24"
                                         Margin="2, 0"
-                                                               
+                                                                 
                                         Tag="{Binding}"/>
                             </StackPanel>
                         </Grid>
@@ -84,7 +88,7 @@
                         <Border BorderThickness="0, 0, 1, 0"
                                 BorderBrush="#d0d0d0">
                             <Grid Grid.Column="0">
-                                <Button x:ConnectionId='21' Background="Transparent"
+                                <Button x:ConnectionId='31' Background="Transparent"
                                         FontSize="20"
                                         Margin="10, 0"
                                         VerticalAlignment="Center"
@@ -93,7 +97,7 @@
                                                       
                                                                              >
                                     <StackPanel Orientation="Vertical">
-                                        <TextBlock x:ConnectionId='22'                                                   />
+                                        <TextBlock x:ConnectionId='32'                                                   />
                                         <TextBlock Text="&#xE011;" 
                                                    FontFamily="Segoe MDL2 Assets"
                                                    HorizontalAlignment="Center"
@@ -103,7 +107,7 @@
                             </Grid>
                         </Border>
                         <Grid Grid.Column="1">
-                            <Button x:ConnectionId='20'                                           
+                            <Button x:ConnectionId='30'                                           
                                                   
                                     FontSize="20"
                                     Background="Transparent"
@@ -128,7 +132,7 @@
 
         <DataTemplate x:Key="quantitativeTemplate"
                                                                      >
-            <Border x:ConnectionId='8' BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
+            <Border x:ConnectionId='17' BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
                 <StackPanel Background="White" Padding="20" Orientation="Vertical" Width="700">
                     <Border BorderThickness="0, 0, 0, 1" BorderBrush="#E0E0E0" Margin="0, 0, 0, 10">
                         <Grid Padding="0, 0, 0, 10">
@@ -138,18 +142,18 @@
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" 
                                         VerticalAlignment="Center"
                                         Margin="20, 0, 0, 0">
-                                <Button x:ConnectionId='17' Content="&#xE946;" Background="Transparent"
+                                <Button x:ConnectionId='27' Content="&#xE946;" Background="Transparent"
                                         FontFamily="Segoe MDL2 Assets"
                                         FontSize="24"
                                         Margin="2, 0"
                                                                   
                                                                  />
-                                <Button x:ConnectionId='18' Content="&#xE70F;"
+                                <Button x:ConnectionId='28' Content="&#xE74D;"
                                         Background="Transparent"
                                         FontFamily="Segoe MDL2 Assets"
                                         FontSize="24"
                                         Margin="2, 0"
-                                                               
+                                                                 
                                         Tag="{Binding}"/>
                             </StackPanel>
                         </Grid>
@@ -164,7 +168,7 @@
                                        VerticalAlignment="Center"/>
                             <Button Background="Transparent">
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock x:ConnectionId='13'                                             
+                                    <TextBlock x:ConnectionId='23'                                             
                                                FontSize="20"/>
                                     <TextBlock Text="&#xE011;"
                                                FontFamily="Segoe MDL2 Assets" 
@@ -174,15 +178,15 @@
                                 </StackPanel>
                                 <Button.Flyout>
                                     <MenuFlyout>
-                                        <MenuFlyoutItem x:ConnectionId='14' Text="Correlation"
+                                        <MenuFlyoutItem x:ConnectionId='24' Text="Correlation"
                                                         FontSize="20"
                                                                                 
                                                         Tag="0"/>
-                                        <MenuFlyoutItem x:ConnectionId='15' Text="Function"
+                                        <MenuFlyoutItem x:ConnectionId='25' Text="Function"
                                                         FontSize="20"
                                                                                 
                                                         Tag="1"/>
-                                        <MenuFlyoutItem x:ConnectionId='16' Text="Statistical"
+                                        <MenuFlyoutItem x:ConnectionId='26' Text="Statistical"
                                                         FontSize="20"
                                                                                 
                                                         Tag="2"/>
@@ -197,11 +201,11 @@
                                        FontSize="20"
                                        Margin="0, 0, 10, 0"
                                        VerticalAlignment="Center"/>
-                            <Button x:ConnectionId='11' Background="Transparent"
+                            <Button x:ConnectionId='21' Background="Transparent"
                                                                                     
                                                           >
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock x:ConnectionId='12'                                                
+                                    <TextBlock x:ConnectionId='22'                                                
                                                FontSize="20"/>
                                     <TextBlock Text="&#xE011;"
                                                FontFamily="Segoe MDL2 Assets" 
@@ -216,15 +220,18 @@
                                 <ColumnDefinition Width="3*"/>
                                 <ColumnDefinition Width="2*"/>
                             </Grid.ColumnDefinitions>
-                            <TextBlock x:ConnectionId='9'                                        
+                            <TextBlock x:ConnectionId='18'                                        
                                                                                               
                                        TextWrapping="Wrap"
                                        Grid.Column="0"
                                        FontSize="18"/>
-                            <Image x:ConnectionId='10'                                                
+                            <Image x:ConnectionId='19'                                                
                                    Width="200"
-                                   Source="Images/linear.png" 
-                                   Grid.Column="1"/>
+                                   Grid.Column="1">
+                                <Image.Source>
+                                    <BitmapImage x:ConnectionId='20'                                       />
+                                </Image.Source>
+                            </Image>
                         </Grid>
                     </StackPanel>
                 </StackPanel>
@@ -233,11 +240,11 @@
 
         <DataTemplate x:Key="dataTemplate" 
                                                       >
-            <Border x:ConnectionId='1' BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
+            <Border x:ConnectionId='10' BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
                 <StackPanel Background="White" Padding="20" Orientation="Vertical" Width="700">
                     <Border BorderThickness="0, 0, 0, 1" BorderBrush="#E0E0E0" Margin="0, 0, 0, 10">
                         <Grid Padding="0, 0, 0, 10">
-                            <TextBlock x:ConnectionId='6'                      FontSize="24" Foreground="Black" 
+                            <TextBlock x:ConnectionId='15'                      FontSize="24" Foreground="Black" 
                                        VerticalAlignment="Center" HorizontalAlignment="Left"
                                        Margin="0, 0, 60, 0" TextWrapping="WrapWholeWords"/>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" 
@@ -247,12 +254,12 @@
                                         FontFamily="Segoe MDL2 Assets"
                                         FontSize="24"
                                         Margin="2, 0"/>
-                                <Button x:ConnectionId='7' Content="&#xE70F;"
+                                <Button x:ConnectionId='16' Content="&#xE74D;"
                                         Background="Transparent"
                                         FontFamily="Segoe MDL2 Assets"
                                         FontSize="24"
                                         Margin="2, 0"
-                                                               
+                                                                 
                                                       />
                             </StackPanel>
                         </Grid>
@@ -264,12 +271,12 @@
                                 <common:LayoutTransformer.LayoutTransform>
                                     <RotateTransform Angle="-90" />
                                 </common:LayoutTransformer.LayoutTransform>
-                                <TextBlock x:ConnectionId='5'                                               />
+                                <TextBlock x:ConnectionId='14'                                               />
                             </common:LayoutTransformer>
-                            <Charting:Chart x:ConnectionId='3' HorizontalAlignment="Center" VerticalAlignment="Center" 
+                            <Charting:Chart x:ConnectionId='12' HorizontalAlignment="Center" VerticalAlignment="Center" 
                                             Width="600" Height="400"                       
                                                                    >
-                                <Charting:LineSeries x:ConnectionId='4' Margin="0" 
+                                <Charting:LineSeries x:ConnectionId='13' Margin="0" 
                                                                            
                                                      IndependentValuePath="Name" DependentValuePath="Amount" 
                                                      IsSelectionEnabled="True"                                              
@@ -278,47 +285,126 @@
                                 </Charting:LineSeries>
                             </Charting:Chart>
                         </StackPanel>
-                        <TextBlock x:ConnectionId='2' HorizontalAlignment="Center" 
+                        <TextBlock x:ConnectionId='11' HorizontalAlignment="Center" 
                                                                            />
                     </StackPanel>
                 </StackPanel>
             </Border>
         </DataTemplate>
 
+        <DataTemplate x:Key="materialTemplate"
+                                                     >
+            <Border x:ConnectionId='1' BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
+                <StackPanel Background="White" Padding="20" Orientation="Vertical" Width="700">
+                    <Border BorderThickness="0, 0, 0, 1" BorderBrush="#E0E0E0" Margin="0, 0, 0, 10">
+                        <Grid Padding="0, 0, 0, 10">
+                            <TextBlock x:ConnectionId='7'                      FontSize="24" Foreground="Black" 
+                                       VerticalAlignment="Center" HorizontalAlignment="Left"
+                                       Margin="0, 0, 60, 0" TextWrapping="WrapWholeWords"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" 
+                                        VerticalAlignment="Center"
+                                        Margin="20, 0, 0, 0">
+                                <Button x:ConnectionId='8' Content="&#xE946;" Background="Transparent"
+                                        FontFamily="Segoe MDL2 Assets"
+                                        FontSize="24"
+                                        Margin="2, 0"
+                                                                  
+                                                                 />
+                                <Button x:ConnectionId='9' Content="&#xE74D;"
+                                        Background="Transparent"
+                                        FontFamily="Segoe MDL2 Assets"
+                                        FontSize="24"
+                                        Margin="2, 0"
+                                                                 
+                                                      />
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <Grid>
+                        <TextBox x:ConnectionId='5'                                          
+                                 PlaceholderText="Material Name"
+                                                            
+                                 FontSize="22"
+                                 Margin="0, 10"
+                                 HorizontalAlignment="Left"
+                                 BorderThickness="0,0,0,2"
+                                 VerticalAlignment="Center"/>
+                        <TextBox x:ConnectionId='6'                                            
+                                 PlaceholderText="Quantity"
+                                 TextAlignment="Center"
+                                                            
+                                 FontSize="22"
+                                 Margin="0, 10"
+                                 HorizontalAlignment="Right"
+                                 BorderThickness="0,0,0,2"
+                                 VerticalAlignment="Center"
+                                                                  />
+                    </Grid>
+
+                    <TextBox x:ConnectionId='2'                                                 
+                             PlaceholderText="Material Description"
+                                                        
+                             FontSize="18"
+                             Margin="0, 10"
+                             BorderThickness="0,0,0,2"
+                             TextWrapping="Wrap"
+                             AcceptsReturn="True"/>
+
+                    <Image x:ConnectionId='3'                                 
+                           Width="200"
+                           Margin="0, 0, 0, 10"
+                           HorizontalAlignment="Left"/>
+                    
+                    <Button x:ConnectionId='4'                             >
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets"
+                                       Text="&#xE710;" 
+                                       VerticalAlignment="Center"
+                                       FontSize="12"/>
+                            <TextBlock Text=" Add Image"
+                                       FontSize="14"
+                                       VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+        
         <local:CardListTemplateSelector 
             TextTemplate="{StaticResource textTemplate}" 
             DataTemplate="{StaticResource dataTemplate}"
             VariableTemplate="{StaticResource variableTemplate}"
             QuantitativeTemplate="{StaticResource quantitativeTemplate}"
+            MaterialTemplate="{StaticResource materialTemplate}"
             x:Key="CardListTemplateSelector" />
     </Page.Resources>
 
-    <SplitView x:ConnectionId='29' x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
+    <SplitView x:ConnectionId='40' x:Name="MySplitView" DisplayMode="CompactOverlay"  IsPaneOpen="False" 
                CompactPaneLength="60" OpenPaneLength="300">
         <SplitView.Pane>
-            <local:NavControl x:ConnectionId='30' x:Name="NavPanel"></local:NavControl>
+            <local:NavControl x:ConnectionId='41' x:Name="NavPanel"></local:NavControl>
         </SplitView.Pane>
         <SplitView.Content>
             <ScrollViewer>
                 <StackPanel Orientation="Vertical" Background="#F0F0F0" VerticalAlignment="Stretch">
                     <Grid HorizontalAlignment="Stretch" Margin="40, 20, 0, 0">
                         <StackPanel Orientation="Vertical">
-                            <TextBlock x:ConnectionId='48' Text="My Experiment" 
+                            <TextBlock x:ConnectionId='59' Text="My Experiment" 
                                        FontSize="48" 
                                        Margin="0, 0, 10, 0" 
                                        HorizontalAlignment="Left"
                                        x:Name="ExpName" />
-                            <TextBlock x:ConnectionId='49' Text="Author"
+                            <TextBlock x:ConnectionId='60' Text="Author"
                                        FontSize="24"
                                        Foreground="#505050"
                                        x:Name="ExperimentAuthor"/>
-                            <TextBlock x:ConnectionId='50' Text="Created"
+                            <TextBlock x:ConnectionId='61' Text="Created"
                                        FontSize="18"
                                        Foreground="#a0a0a0"
                                        x:Name="ExperimentCreated"/>
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
-                            <Button x:ConnectionId='44' VerticalAlignment="Center"
+                            <Button x:ConnectionId='55' VerticalAlignment="Center"
                                     Content="&#xE118;"
                                     FontFamily="Segoe MDL2 Assets"
                                     Background="Transparent"
@@ -327,7 +413,7 @@
                                     x:Name="Export"
                                                         
                                     ToolTipService.ToolTip="Export Experiment"/>
-                            <Button x:ConnectionId='45' VerticalAlignment="Center"
+                            <Button x:ConnectionId='56' VerticalAlignment="Center"
                                     Content="&#xE713;"
                                     FontSize="24"
                                     FontFamily="Segoe MDL2 Assets"
@@ -335,7 +421,7 @@
                                     Margin="10, 10, 10, 10"
                                                                      
                                     ToolTipService.ToolTip="Experiment Settings"/>
-                            <Button x:ConnectionId='46' VerticalAlignment="Center"
+                            <Button x:ConnectionId='57' VerticalAlignment="Center"
                                     Content="&#xE710;"
                                     FontFamily="Segoe MDL2 Assets"
                                     FontSize="24"
@@ -344,7 +430,7 @@
                                                                
                                     ToolTipService.ToolTip="Add Devices"
                                     />
-                            <Button x:ConnectionId='47' VerticalAlignment="Center"
+                            <Button x:ConnectionId='58' VerticalAlignment="Center"
                                     Content="&#xE768;"
                                     FontFamily="Segoe MDL2 Assets"
                                     FontSize="24"
@@ -355,14 +441,14 @@
                                     x:Name="PlayExperimentButton"/>
                         </StackPanel>
                     </Grid>
-                    <Pivot x:ConnectionId='31' x:Name="RootPivot" Margin="20, 20, 20, 20" VerticalAlignment="Stretch">
+                    <Pivot x:ConnectionId='42' x:Name="RootPivot" Margin="20, 20, 20, 20" VerticalAlignment="Stretch">
                         <PivotItem Header="Problem" VerticalAlignment="Stretch">
                             <StackPanel Orientation="Vertical" Padding="10">
-                                <ListView x:ConnectionId='42' x:Name="ProblemCards"
+                                <ListView x:ConnectionId='53' x:Name="ProblemCards"
                                           SelectionMode="None"
                                           Margin="0, 0, 0, 50"
                                           ItemTemplateSelector="{StaticResource CardListTemplateSelector}" />
-                                <Button x:ConnectionId='43' HorizontalAlignment="Center"
+                                <Button x:ConnectionId='54' HorizontalAlignment="Center"
                                     Content="Add New Card"
                                     Background="Transparent"
                                     Foreground="#909090"
@@ -377,11 +463,11 @@
                         </PivotItem>
                         <PivotItem Header="Hypothesis">
                             <StackPanel Orientation="Vertical" Padding="10">
-                                <ListView x:ConnectionId='40' x:Name="HypothesisCards"
+                                <ListView x:ConnectionId='51' x:Name="HypothesisCards"
                                           SelectionMode="None"
                                           Margin="0, 0, 0, 50"
                                           ItemTemplateSelector="{StaticResource CardListTemplateSelector}" />
-                                <Button x:ConnectionId='41' HorizontalAlignment="Center"
+                                <Button x:ConnectionId='52' HorizontalAlignment="Center"
                                     Content="Add New Card"
                                     Background="Transparent"
                                     Foreground="#909090"
@@ -396,12 +482,12 @@
                         </PivotItem>
                         <PivotItem Header="Materials">
                             <StackPanel Orientation="Vertical" Padding="10">
-                                <ListView x:ConnectionId='38' x:Name="MaterialsCards"
+                                <ListView x:ConnectionId='49' x:Name="MaterialsCards"
                                         SelectionMode="None"
                                         Margin="0, 0, 0, 50"
                                         ItemTemplateSelector="{StaticResource CardListTemplateSelector}">
                                 </ListView>
-                                <Button x:ConnectionId='39' HorizontalAlignment="Center"
+                                <Button x:ConnectionId='50' HorizontalAlignment="Center"
                                     Content="Add New Card"
                                     Background="Transparent"
                                     Foreground="#909090"
@@ -416,11 +502,11 @@
                         </PivotItem>
                         <PivotItem Header="Experiment">
                             <StackPanel Orientation="Vertical" Padding="10">
-                                <ListView x:ConnectionId='36' x:Name="ExperimentCards"
+                                <ListView x:ConnectionId='47' x:Name="ExperimentCards"
                                           SelectionMode="None"
                                           Margin="0, 0, 0, 50"
                                           ItemTemplateSelector="{StaticResource CardListTemplateSelector}" />
-                                <Button x:ConnectionId='37' HorizontalAlignment="Center"
+                                <Button x:ConnectionId='48' HorizontalAlignment="Center"
                                     Content="Add New Card"
                                     Background="Transparent"
                                     Foreground="#909090"
@@ -435,12 +521,12 @@
                         </PivotItem>
                         <PivotItem Header="Data Analysis">
                             <StackPanel Orientation="Vertical" Padding="10">
-                                <ListView x:ConnectionId='34' x:Name="DataAnalysisCards"
+                                <ListView x:ConnectionId='45' x:Name="DataAnalysisCards"
                                           SelectionMode="None"
                                           Margin="0, 0, 0, 50"
                                           ItemTemplateSelector="{StaticResource CardListTemplateSelector}">
                                 </ListView>
-                                <Button x:ConnectionId='35' HorizontalAlignment="Center"
+                                <Button x:ConnectionId='46' HorizontalAlignment="Center"
                                     Content="Add New Card"
                                     Background="Transparent"
                                     Foreground="#909090"
@@ -455,11 +541,11 @@
                         </PivotItem>
                         <PivotItem Header="Conclusions">
                             <StackPanel Orientation="Vertical" Padding="10">
-                                <ListView x:ConnectionId='32' x:Name="ConclusionsCards"
+                                <ListView x:ConnectionId='43' x:Name="ConclusionsCards"
                                           SelectionMode="None"
                                           Margin="0, 0, 0, 50"
                                           ItemTemplateSelector="{StaticResource CardListTemplateSelector}"/>
-                                <Button x:ConnectionId='33' HorizontalAlignment="Center"
+                                <Button x:ConnectionId='44' HorizontalAlignment="Center"
                                     Content="Add New Card"
                                     Background="Transparent"
                                     Foreground="#909090"

@@ -38,6 +38,10 @@ namespace MultiporterC
             {
                 return QuantitativeTemplate;
             }
+            else if (item.GetType() == typeof(MaterialNode))
+            {
+                return MaterialTemplate;
+            }
             Debug.WriteLine("No");
             return TextTemplate;
         }

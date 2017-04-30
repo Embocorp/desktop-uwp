@@ -10,7 +10,7 @@
     xmlns:common="using:Common">
 
     <Page.Resources>
-
+        
         <DataTemplate x:Key="textTemplate"
                       x:DataType="local:ExperimentNode">
             <Border BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
@@ -29,20 +29,24 @@
                                         Margin="2, 0"
                                         Tag="{x:Bind Description}"
                                         Click="Description_Click"/>
-                                <Button Content="&#xE70F;"
+                                <Button Content="&#xE74D;"
                                         Background="Transparent"
                                         FontFamily="Segoe MDL2 Assets"
                                         FontSize="24"
                                         Margin="2, 0"
-                                        Click="Edit_Card_Click"
-                                        Tag="{Binding}"/>
+                                        Click="Delete_Card_Click"
+                                        Tag="{x:Bind}"/>
                             </StackPanel>
                         </Grid>
                     </Border>
-                    <TextBlock Text="{Binding Content}"
-                               FontSize="18"
-                               Margin="0, 10"
-                               TextWrapping="WrapWholeWords"/>
+                    <TextBox Text="{x:Bind Content, Mode=TwoWay}"
+                             PlaceholderText="{x:Bind Name}"
+                             LostFocus="Save_Card_Click"
+                             FontSize="18"
+                             Margin="0, 10"
+                             BorderThickness="0,0,0,2"
+                             TextWrapping="Wrap"
+                             AcceptsReturn="True"/>
                 </StackPanel>
             </Border>
         </DataTemplate>
@@ -65,12 +69,12 @@
                                         Margin="2, 0"
                                         Tag="{Binding Description}"
                                         Click="Description_Click"/>
-                                <Button Content="&#xE70F;"
+                                <Button Content="&#xE74D;"
                                         Background="Transparent"
                                         FontFamily="Segoe MDL2 Assets"
                                         FontSize="24"
                                         Margin="2, 0"
-                                        Click="Edit_Card_Click"
+                                        Click="Delete_Card_Click"
                                         Tag="{Binding}"/>
                             </StackPanel>
                         </Grid>
@@ -144,12 +148,12 @@
                                         Margin="2, 0"
                                         Tag="{x:Bind Description}"
                                         Click="Description_Click"/>
-                                <Button Content="&#xE70F;"
+                                <Button Content="&#xE74D;"
                                         Background="Transparent"
                                         FontFamily="Segoe MDL2 Assets"
                                         FontSize="24"
                                         Margin="2, 0"
-                                        Click="Edit_Card_Click"
+                                        Click="Delete_Card_Click"
                                         Tag="{Binding}"/>
                             </StackPanel>
                         </Grid>
@@ -223,8 +227,11 @@
                                        FontSize="18"/>
                             <Image Visibility="{x:Bind ImageVisible, Mode=OneWay}"
                                    Width="200"
-                                   Source="Images/linear.png" 
-                                   Grid.Column="1"/>
+                                   Grid.Column="1">
+                                <Image.Source>
+                                    <BitmapImage UriSource="{x:Bind Rep, Mode=OneWay}" />
+                                </Image.Source>
+                            </Image>
                         </Grid>
                     </StackPanel>
                 </StackPanel>
@@ -247,12 +254,12 @@
                                         FontFamily="Segoe MDL2 Assets"
                                         FontSize="24"
                                         Margin="2, 0"/>
-                                <Button Content="&#xE70F;"
+                                <Button Content="&#xE74D;"
                                         Background="Transparent"
                                         FontFamily="Segoe MDL2 Assets"
                                         FontSize="24"
                                         Margin="2, 0"
-                                        Click="Edit_Card_Click"
+                                        Click="Delete_Card_Click"
                                         Tag="{x:Bind}"/>
                             </StackPanel>
                         </Grid>
@@ -285,11 +292,90 @@
             </Border>
         </DataTemplate>
 
+        <DataTemplate x:Key="materialTemplate"
+                      x:DataType="local:MaterialNode">
+            <Border BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
+                <StackPanel Background="White" Padding="20" Orientation="Vertical" Width="700">
+                    <Border BorderThickness="0, 0, 0, 1" BorderBrush="#E0E0E0" Margin="0, 0, 0, 10">
+                        <Grid Padding="0, 0, 0, 10">
+                            <TextBlock Text="{x:Bind Name}" FontSize="24" Foreground="Black" 
+                                       VerticalAlignment="Center" HorizontalAlignment="Left"
+                                       Margin="0, 0, 60, 0" TextWrapping="WrapWholeWords"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" 
+                                        VerticalAlignment="Center"
+                                        Margin="20, 0, 0, 0">
+                                <Button Content="&#xE946;" Background="Transparent"
+                                        FontFamily="Segoe MDL2 Assets"
+                                        FontSize="24"
+                                        Margin="2, 0"
+                                        Tag="{x:Bind Description}"
+                                        Click="Description_Click"/>
+                                <Button Content="&#xE74D;"
+                                        Background="Transparent"
+                                        FontFamily="Segoe MDL2 Assets"
+                                        FontSize="24"
+                                        Margin="2, 0"
+                                        Click="Delete_Card_Click"
+                                        Tag="{x:Bind}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <Grid>
+                        <TextBox Text="{x:Bind MaterialName, Mode=TwoWay}"
+                                 PlaceholderText="Material Name"
+                                 LostFocus="Save_Card_Click"
+                                 FontSize="22"
+                                 Margin="0, 10"
+                                 HorizontalAlignment="Left"
+                                 BorderThickness="0,0,0,2"
+                                 VerticalAlignment="Center"/>
+                        <TextBox Text="{x:Bind QuantityString, Mode=TwoWay}"
+                                 PlaceholderText="Quantity"
+                                 TextAlignment="Center"
+                                 LostFocus="Save_Card_Click"
+                                 FontSize="22"
+                                 Margin="0, 10"
+                                 HorizontalAlignment="Right"
+                                 BorderThickness="0,0,0,2"
+                                 VerticalAlignment="Center"
+                                 TextChanged="TextBox_TextChanged"/>
+                    </Grid>
+
+                    <TextBox Text="{x:Bind MaterialDescription, Mode=TwoWay}"
+                             PlaceholderText="Material Description"
+                             LostFocus="Save_Card_Click"
+                             FontSize="18"
+                             Margin="0, 10"
+                             BorderThickness="0,0,0,2"
+                             TextWrapping="Wrap"
+                             AcceptsReturn="True"/>
+
+                    <Image Source="{x:Bind B, Mode=OneWay}"
+                           Width="200"
+                           Margin="0, 0, 0, 10"
+                           HorizontalAlignment="Left"/>
+                    
+                    <Button Click="Material_Image_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets"
+                                       Text="&#xE710;" 
+                                       VerticalAlignment="Center"
+                                       FontSize="12"/>
+                            <TextBlock Text=" Add Image"
+                                       FontSize="14"
+                                       VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+        
         <local:CardListTemplateSelector 
             TextTemplate="{StaticResource textTemplate}" 
             DataTemplate="{StaticResource dataTemplate}"
             VariableTemplate="{StaticResource variableTemplate}"
             QuantitativeTemplate="{StaticResource quantitativeTemplate}"
+            MaterialTemplate="{StaticResource materialTemplate}"
             x:Key="CardListTemplateSelector" />
     </Page.Resources>
 

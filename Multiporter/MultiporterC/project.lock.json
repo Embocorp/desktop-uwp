@@ -22879,14 +22879,14 @@
     "UAP,Version=v10.0": []
   },
   "packageFolders": {
-    "C:\\Users\\PALBOTICS\\.nuget\\packages\\": {}
+    "C:\\Users\\Iggy\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\PALBOTICS\\Documents\\embi\\desktop-uwp\\Multiporter\\MultiporterC\\MultiporterC.csproj",
+      "projectUniqueName": "C:\\Users\\Iggy\\Documents\\embi\\desktop-uwp\\Multiporter\\MultiporterC\\MultiporterC.csproj",
       "projectName": "MultiporterC",
-      "projectPath": "C:\\Users\\PALBOTICS\\Documents\\embi\\desktop-uwp\\Multiporter\\MultiporterC\\MultiporterC.csproj",
-      "projectJsonPath": "C:\\Users\\PALBOTICS\\Documents\\embi\\desktop-uwp\\Multiporter\\MultiporterC\\project.json",
+      "projectPath": "C:\\Users\\Iggy\\Documents\\embi\\desktop-uwp\\Multiporter\\MultiporterC\\MultiporterC.csproj",
+      "projectJsonPath": "C:\\Users\\Iggy\\Documents\\embi\\desktop-uwp\\Multiporter\\MultiporterC\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {
