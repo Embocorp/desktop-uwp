@@ -13,6 +13,8 @@ namespace MultiporterC
     {
         public DataTemplate TextTemplate { get; set; }
         public DataTemplate DataTemplate { get; set; }
+        public DataTemplate DataBarTemplate { get; set; }
+        public DataTemplate DataScatterTemplate { get; set; }
         public DataTemplate VariableTemplate { get; set; }
         public DataTemplate QuantitativeTemplate { get; set; }
         public DataTemplate MaterialTemplate { get; set; }
@@ -28,6 +30,14 @@ namespace MultiporterC
             }
             else if (item.GetType() == typeof(DataChartNode))
             {
+                if (((DataChartNode)item).Type == DataChartNode.ChartType.Scatter)
+                {
+                    return DataScatterTemplate;
+                } 
+                else if (((DataChartNode)item).Type == DataChartNode.ChartType.Bar)
+                {
+                    return DataBarTemplate;
+                }
                 return DataTemplate;
             }
             else if (item.GetType() == typeof(VariableNode))

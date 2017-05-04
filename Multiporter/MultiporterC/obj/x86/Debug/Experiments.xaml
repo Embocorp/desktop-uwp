@@ -22,7 +22,7 @@
                                        FontSize="48" 
                                        Margin="20, 0, 10, 10" 
                                        HorizontalAlignment="Left"/>
-                            <Button x:ConnectionId='9' Content="&#xE8F4;"
+                            <Button x:ConnectionId='10' Content="&#xE8F4;"
                                     FontFamily="Segoe MDL2 Assets"
                                     Background="Transparent"
                                     BorderThickness="0"
@@ -31,24 +31,24 @@
                                     Margin="20, 0, 0, 0"
                                                                 
                                     />
-                            <Popup x:ConnectionId='10' VerticalOffset="10" HorizontalOffset="0" x:Name="StandardPopup">
+                            <Popup x:ConnectionId='11' VerticalOffset="10" HorizontalOffset="0" x:Name="StandardPopup">
                                 <Border BorderBrush="{StaticResource ApplicationForegroundThemeBrush}" 
                 Background="{StaticResource ApplicationPageBackgroundThemeBrush}"
                 BorderThickness="2" Width="400" Height="200">
                                     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                                        <TextBox x:ConnectionId='11' PlaceholderText="Experiment Name"
+                                        <TextBox x:ConnectionId='12' PlaceholderText="Experiment Name"
                                                  Margin="0, 10, 0, 20"
                                                  x:Name="ExperimentName"
                                                  MinWidth="300"
                                             />
-                                        <Button x:ConnectionId='12' Content="Create Experiment"                                 HorizontalAlignment="Center"
+                                        <Button x:ConnectionId='13' Content="Create Experiment"                                 HorizontalAlignment="Center"
                                                 Margin="0, 0, 0, 20"/>
-                                        <Button x:ConnectionId='13' Content="Cancel"                           HorizontalAlignment="Center"/>
+                                        <Button x:ConnectionId='14' Content="Cancel"                           HorizontalAlignment="Center"/>
                                     </StackPanel>
                                 </Border>
                             </Popup>
                         </StackPanel>
-                        <ProgressBar x:ConnectionId='8' IsIndeterminate="True" 
+                        <ProgressBar x:ConnectionId='9' IsIndeterminate="True" 
                                      Width="200"
                                      Height="25"
                                      HorizontalAlignment="Left"
@@ -91,24 +91,25 @@
                     </GridView>
                     <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" Margin="40, 20, 0, 0">
                         <TextBlock Text="Online Experiments" FontSize="48" Margin="0, 0, 10, 10" HorizontalAlignment="Left"></TextBlock>
-                        <TextBox x:ConnectionId='6'                                   
+                        <TextBox x:ConnectionId='7'                                   
                                  VerticalAlignment="Bottom" 
                                  Width="300" 
                                  HorizontalAlignment="Left" 
                                  FontSize="18"
                                  PlaceholderText="Search the Online Repo"/>
-                        <ProgressBar x:ConnectionId='7' IsIndeterminate="True" 
+                        <ProgressBar x:ConnectionId='8' IsIndeterminate="True" 
                                      Width="200"
                                      Height="25"
                                      HorizontalAlignment="Left"
                                      Visibility="Collapsed"
                                      x:Name="OnlineLoading"/>
                     </StackPanel>
-                    <TextBlock Text="Our Recommendations"
+                    <TextBlock x:ConnectionId='5' x:Name="Rex"
+                               Text="Our Recommendations"
                                Margin="40, 10, 10, 0"
                                FontSize="16"
                                FontWeight="Medium"/>
-                    <GridView x:ConnectionId='5' HorizontalAlignment="Stretch" 
+                    <GridView x:ConnectionId='6' HorizontalAlignment="Stretch" 
                               VerticalAlignment="Stretch" 
                               x:Name="OnlineExperimentsList"
                               Margin="20, 0, 0, 0"

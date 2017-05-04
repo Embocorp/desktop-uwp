@@ -104,7 +104,8 @@
                                      Visibility="Collapsed"
                                      x:Name="OnlineLoading"/>
                     </StackPanel>
-                    <TextBlock Text="Our Recommendations"
+                    <TextBlock x:Name="Rex"
+                               Text="Our Recommendations"
                                Margin="40, 10, 10, 0"
                                FontSize="16"
                                FontWeight="Medium"/>

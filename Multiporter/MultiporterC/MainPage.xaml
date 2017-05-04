@@ -38,7 +38,8 @@
                             </Button>
                         </Border>
                         <Border BorderThickness="0, 0, 3, 3" BorderBrush="#e5e5e5" Margin="10, 0, 10, 0">
-                            <Button x:Name="Account" Width="150" Height="150" Background="White" BorderThickness="0">
+                            <Button x:Name="Account" Width="150" Height="150" Background="White" BorderThickness="0"
+                                    Click="Account_Click">
                                 <StackPanel Orientation="Vertical" Padding="10, 10, 10, 10">
                                     <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE77B;" Height="60" FontSize="36" Foreground="Black" HorizontalAlignment="Center"/>
                                     <TextBlock Text="Account" HorizontalAlignment="Center" Foreground="Black" FontSize="18"/>

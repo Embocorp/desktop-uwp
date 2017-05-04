@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -40,6 +41,10 @@ namespace MultiporterC
         /// <param name="e">Details about the launch request and process.</param>
         protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
+            if (Debugger.IsAttached)
+            {
+                //Windows.Storage.ApplicationData.Current.LocalSettings.Values.Clear();
+            } 
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,
@@ -108,7 +113,7 @@ namespace MultiporterC
             string xml = await Windows.Storage.FileIO.ReadTextAsync(file);
             try
             {
-                output = ((Experiment)Serialize.Deserialize_Object<Experiment>(xml));
+                output = ((Experiment)Serialize.Xml_Deserialize_Object<Experiment>(xml));
                 rootFrame.Navigate(typeof(Explorer), output);
             }
             catch (Exception e)

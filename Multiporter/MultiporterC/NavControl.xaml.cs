@@ -46,5 +46,10 @@ namespace MultiporterC
         {
             (Window.Current.Content as Frame).Navigate(typeof(Devices));
         }
+
+        private void MenuButtonAccount_Click(object sender, RoutedEventArgs e)
+        {
+            (Window.Current.Content as Frame).Navigate(typeof(UserPage));
+        }
     }
 }

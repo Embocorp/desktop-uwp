@@ -36,7 +36,6 @@
             <uap:DisplayName>Multiporter</uap:DisplayName>
             <uap:Logo>splash.png</uap:Logo>
             <uap:InfoTip>Multiporter Experiment File</uap:InfoTip>
-            <uap:EditFlags OpenIsSafe="true" />
             <uap:SupportedFileTypes>
               <uap:FileType ContentType="text/xml">.mport</uap:FileType>
             </uap:SupportedFileTypes>
@@ -47,6 +46,7 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <DeviceCapability Name="location" />
   </Capabilities>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />

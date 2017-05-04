@@ -289,26 +289,87 @@ namespace MultiporterC
             b.Click -= Abort_Experiment;
         }
 
-        public void Run_Manual()
+        public async void Run_Manual()
         {
-            
-        }
-
-        public void Play_Experiment (Device tool)
-        {
-            /*
+            DataChartNode active = null;
+            foreach (ExperimentNode node in Exp.Cards)
+            {
+                if (node.GetType() == typeof(DataChartNode))
+                {
+                    active = node as DataChartNode;
+                }
+            }
             for (double i = 0; i < 120; i+=0.5)
             {
-                DataPoint d = await Get_DataPoints(i);
-                active.Add_Data_Point(d);
-                ListViewItem list = (DataAnalysisCards.ContainerFromItem(DataAnalysisCards.Items[0])) as ListViewItem;
-                Chart chart = VisualTreeHelper.GetChild(VisualTreeHelper.GetChild(VisualTreeHelper.GetChild(VisualTreeHelper.GetChild(list, 0), 0), 0), 1)
-                    as Chart;
-                (chart.Series[0] as LineSeries).ItemsSource = null;
-                (chart.Series[0] as LineSeries).ItemsSource = active.Data;
+                Debug.WriteLine("Playing");
                 
+                DataPoint d = await Get_DataPoints(i);
+                Debug.WriteLine(d.X);
+                active.Add_Data_Point(d);
+                ListViewItem temp = (ListViewItem)DataAnalysisCards.ContainerFromItem(active);
+                Chart c = FindByName("chart", temp) as Chart;
+
+                if (active.Type == DataChartNode.ChartType.Line)
+                {
+                    ((LineSeries)c.Series[0]).ItemsSource = null;
+                    ((LineSeries)c.Series[0]).ItemsSource = active.Data;
+                }
+                else if (active.Type == DataChartNode.ChartType.Bar)
+                {
+                    ((LineSeries)c.Series[0]).ItemsSource = null;
+                    ((LineSeries)c.Series[0]).ItemsSource = active.Data;
+                }
+                else if (active.Type == DataChartNode.ChartType.Scatter)
+                {
+                    ((LineSeries)c.Series[0]).ItemsSource = null;
+                    ((LineSeries)c.Series[0]).ItemsSource = active.Data;
+                }
             }
-            */
+        }
+
+        private FrameworkElement FindByName(string name, FrameworkElement root)
+        {
+            Stack<FrameworkElement> tree = new Stack<FrameworkElement>();
+            tree.Push(root);
+
+            while (tree.Count > 0)
+            {
+                FrameworkElement current = tree.Pop();
+                if (current.Name == name)
+                    return current;
+
+                int count = VisualTreeHelper.GetChildrenCount(current);
+                for (int i = 0; i < count; ++i)
+                {
+                    DependencyObject child = VisualTreeHelper.GetChild(current, i);
+                    if (child is FrameworkElement)
+                        tree.Push((FrameworkElement)child);
+                }
+            }
+
+            return null;
+        }
+
+        public async void Play_Experiment (Device tool)
+        {
+            
+            for (double i = 0; i < 120; i+=0.5)
+            {
+                DataChartNode active = null;
+                foreach (ExperimentNode node in Exp.Cards)
+                {
+                    if (node.GetType() == typeof(DataChartNode))
+                    {
+                        active = node as DataChartNode;
+                    }
+                }
+                Debug.WriteLine("Playing");
+                
+                DataPoint d = await Get_DataPoints(i);
+                Debug.WriteLine(d.X);
+                active.Add_Data_Point(d);               
+            }
+            
             Playing = true;
             ProgressRing ring = new ProgressRing()
             {
@@ -319,6 +380,12 @@ namespace MultiporterC
             PlayExperimentButton.Content = ring;
             PlayExperimentButton.Click -= Play_Click;
             PlayExperimentButton.Click += Abort_Experiment;
+        }
+
+        public async Task<DataPoint> Get_DataPoints(int i)
+        {
+            await Task.Delay(1000);
+            return new DataPoint(i, 0);
         }
 
         public async Task<DataPoint> Get_DataPoints(double prev)
@@ -461,7 +528,7 @@ namespace MultiporterC
                 // Prevent updates to the remote version of the file until
                 // we finish making changes and call CompleteUpdatesAsync.
                 Windows.Storage.CachedFileManager.DeferUpdates(file);
-                string xml = Serialize.Serialize_Object<Experiment>(Exp);
+                string xml = Serialize.Xml_Serialize_Object<Experiment>(Exp);
                 // write to file
                 await Windows.Storage.FileIO.WriteTextAsync(file, xml);
                 // Let Windows know that we're finished changing the file so

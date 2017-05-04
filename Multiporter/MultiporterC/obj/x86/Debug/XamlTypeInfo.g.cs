@@ -156,7 +156,7 @@ namespace MultiporterC.MultiporterC_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[62];
+            _typeNameTable = new string[67];
             _typeNameTable[0] = "Common.LayoutTransformer";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentControl";
             _typeNameTable[2] = "Windows.UI.Xaml.Media.Transform";
@@ -201,26 +201,31 @@ namespace MultiporterC.MultiporterC_XamlTypeInfo
             _typeNameTable[41] = "Windows.UI.Xaml.Style";
             _typeNameTable[42] = "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>";
             _typeNameTable[43] = "Windows.UI.Xaml.ResourceDictionary";
-            _typeNameTable[44] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries";
-            _typeNameTable[45] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>";
+            _typeNameTable[44] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries";
+            _typeNameTable[45] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>";
             _typeNameTable[46] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes";
             _typeNameTable[47] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes";
             _typeNameTable[48] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries";
             _typeNameTable[49] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.Series";
             _typeNameTable[50] = "System.Collections.IEnumerable";
             _typeNameTable[51] = "Windows.UI.Xaml.Data.Binding";
-            _typeNameTable[52] = "Windows.UI.Xaml.Media.PointCollection";
-            _typeNameTable[53] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis";
-            _typeNameTable[54] = "System.Nullable`1<Int32>";
-            _typeNameTable[55] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence";
-            _typeNameTable[56] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
-            _typeNameTable[57] = "TimeSpan";
-            _typeNameTable[58] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost";
-            _typeNameTable[59] = "MultiporterC.Explorer";
-            _typeNameTable[60] = "MultiporterC.MainPage";
-            _typeNameTable[61] = "MultiporterC.NewMeasurement";
+            _typeNameTable[52] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis";
+            _typeNameTable[53] = "System.Nullable`1<Int32>";
+            _typeNameTable[54] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence";
+            _typeNameTable[55] = "Windows.UI.Xaml.Media.Animation.EasingFunctionBase";
+            _typeNameTable[56] = "TimeSpan";
+            _typeNameTable[57] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost";
+            _typeNameTable[58] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries";
+            _typeNameTable[59] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries";
+            _typeNameTable[60] = "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>";
+            _typeNameTable[61] = "Windows.UI.Xaml.Media.PointCollection";
+            _typeNameTable[62] = "MultiporterC.Explorer";
+            _typeNameTable[63] = "MultiporterC.LoginPage";
+            _typeNameTable[64] = "MultiporterC.MainPage";
+            _typeNameTable[65] = "MultiporterC.NewMeasurement";
+            _typeNameTable[66] = "MultiporterC.UserPage";
 
-            _typeTable = new global::System.Type[62];
+            _typeTable = new global::System.Type[67];
             _typeTable[0] = typeof(global::Common.LayoutTransformer);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Media.Transform);
@@ -265,24 +270,29 @@ namespace MultiporterC.MultiporterC_XamlTypeInfo
             _typeTable[41] = typeof(global::Windows.UI.Xaml.Style);
             _typeTable[42] = typeof(global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>);
             _typeTable[43] = typeof(global::Windows.UI.Xaml.ResourceDictionary);
-            _typeTable[44] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries);
-            _typeTable[45] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>);
+            _typeTable[44] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries);
+            _typeTable[45] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>);
             _typeTable[46] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes);
             _typeTable[47] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeriesWithAxes);
             _typeTable[48] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries);
             _typeTable[49] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series);
             _typeTable[50] = typeof(global::System.Collections.IEnumerable);
             _typeTable[51] = typeof(global::Windows.UI.Xaml.Data.Binding);
-            _typeTable[52] = typeof(global::Windows.UI.Xaml.Media.PointCollection);
-            _typeTable[53] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis);
-            _typeTable[54] = typeof(global::System.Nullable<global::System.Int32>);
-            _typeTable[55] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence);
-            _typeTable[56] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
-            _typeTable[57] = typeof(global::System.TimeSpan);
-            _typeTable[58] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost);
-            _typeTable[59] = typeof(global::MultiporterC.Explorer);
-            _typeTable[60] = typeof(global::MultiporterC.MainPage);
-            _typeTable[61] = typeof(global::MultiporterC.NewMeasurement);
+            _typeTable[52] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis);
+            _typeTable[53] = typeof(global::System.Nullable<global::System.Int32>);
+            _typeTable[54] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence);
+            _typeTable[55] = typeof(global::Windows.UI.Xaml.Media.Animation.EasingFunctionBase);
+            _typeTable[56] = typeof(global::System.TimeSpan);
+            _typeTable[57] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost);
+            _typeTable[58] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries);
+            _typeTable[59] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries);
+            _typeTable[60] = typeof(global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>);
+            _typeTable[61] = typeof(global::Windows.UI.Xaml.Media.PointCollection);
+            _typeTable[62] = typeof(global::MultiporterC.Explorer);
+            _typeTable[63] = typeof(global::MultiporterC.LoginPage);
+            _typeTable[64] = typeof(global::MultiporterC.MainPage);
+            _typeTable[65] = typeof(global::MultiporterC.NewMeasurement);
+            _typeTable[66] = typeof(global::MultiporterC.UserPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -337,10 +347,14 @@ namespace MultiporterC.MultiporterC_XamlTypeInfo
         private object Activate_37_Collection() { return new global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>(); }
         private object Activate_39_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>(); }
         private object Activate_42_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>(); }
-        private object Activate_44_LineSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries(); }
-        private object Activate_59_Explorer() { return new global::MultiporterC.Explorer(); }
-        private object Activate_60_MainPage() { return new global::MultiporterC.MainPage(); }
-        private object Activate_61_NewMeasurement() { return new global::MultiporterC.NewMeasurement(); }
+        private object Activate_44_ColumnSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries(); }
+        private object Activate_58_ScatterSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries(); }
+        private object Activate_59_LineSeries() { return new global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries(); }
+        private object Activate_62_Explorer() { return new global::MultiporterC.Explorer(); }
+        private object Activate_63_LoginPage() { return new global::MultiporterC.LoginPage(); }
+        private object Activate_64_MainPage() { return new global::MultiporterC.MainPage(); }
+        private object Activate_65_NewMeasurement() { return new global::MultiporterC.NewMeasurement(); }
+        private object Activate_66_UserPage() { return new global::MultiporterC.UserPage(); }
         private void VectorAdd_7_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::MultiporterC.VariableNode>)instance;
@@ -573,6 +587,8 @@ namespace MultiporterC.MultiporterC_XamlTypeInfo
                 userType.Activator = Activate_24_CardListTemplateSelector;
                 userType.AddMemberName("TextTemplate");
                 userType.AddMemberName("DataTemplate");
+                userType.AddMemberName("DataScatterTemplate");
+                userType.AddMemberName("DataBarTemplate");
                 userType.AddMemberName("VariableTemplate");
                 userType.AddMemberName("QuantitativeTemplate");
                 userType.AddMemberName("MaterialTemplate");
@@ -711,20 +727,18 @@ namespace MultiporterC.MultiporterC_XamlTypeInfo
                 xamlType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 44:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries
-                userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>"));
-                userType.Activator = Activate_44_LineSeries;
-                userType.AddMemberName("Points");
-                userType.AddMemberName("PolylineStyle");
+            case 44:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries
+                userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>"));
+                userType.Activator = Activate_44_ColumnSeries;
                 xamlType = userType;
                 break;
 
-            case 45:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>
+            case 45:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>
                 userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes"));
                 userType.AddMemberName("DependentRangeAxis");
                 userType.AddMemberName("IndependentAxis");
-                userType.AddMemberName("ActualIndependentAxis");
                 userType.AddMemberName("ActualDependentRangeAxis");
+                userType.AddMemberName("ActualIndependentAxis");
                 xamlType = userType;
                 break;
 
@@ -774,23 +788,19 @@ namespace MultiporterC.MultiporterC_XamlTypeInfo
                 xamlType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 52:   //  Windows.UI.Xaml.Media.PointCollection
-                xamlType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 53:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis
+            case 52:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis
                 userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 54:   //  System.Nullable`1<Int32>
+            case 53:   //  System.Nullable`1<Int32>
                 userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 55:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence
+            case 54:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence
                 userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Simultaneous", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence.Simultaneous);
                 userType.AddEnumValue("FirstToLast", global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AnimationSequence.FirstToLast);
@@ -798,41 +808,93 @@ namespace MultiporterC.MultiporterC_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 56:   //  Windows.UI.Xaml.Media.Animation.EasingFunctionBase
+            case 55:   //  Windows.UI.Xaml.Media.Animation.EasingFunctionBase
                 xamlType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 57:   //  TimeSpan
+            case 56:   //  TimeSpan
                 userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 58:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost
+            case 57:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeriesHost
                 userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 59:   //  MultiporterC.Explorer
+            case 58:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries
+                userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes"));
+                userType.Activator = Activate_58_ScatterSeries;
+                userType.AddMemberName("ActualDependentRangeAxis");
+                userType.AddMemberName("DependentRangeAxis");
+                userType.AddMemberName("ActualIndependentAxis");
+                userType.AddMemberName("IndependentAxis");
+                xamlType = userType;
+                break;
+
+            case 59:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries
+                userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>"));
+                userType.Activator = Activate_59_LineSeries;
+                userType.AddMemberName("Points");
+                userType.AddMemberName("PolylineStyle");
+                xamlType = userType;
+                break;
+
+            case 60:   //  WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>
+                userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes"));
+                userType.AddMemberName("DependentRangeAxis");
+                userType.AddMemberName("IndependentAxis");
+                userType.AddMemberName("ActualIndependentAxis");
+                userType.AddMemberName("ActualDependentRangeAxis");
+                xamlType = userType;
+                break;
+
+            case 61:   //  Windows.UI.Xaml.Media.PointCollection
+                xamlType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 62:   //  MultiporterC.Explorer
                 userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_59_Explorer;
+                userType.Activator = Activate_62_Explorer;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 60:   //  MultiporterC.MainPage
+            case 63:   //  MultiporterC.LoginPage
                 userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_60_MainPage;
+                userType.Activator = Activate_63_LoginPage;
+                userType.AddMemberName("Username");
+                userType.AddMemberName("Password");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 61:   //  MultiporterC.NewMeasurement
+            case 64:   //  MultiporterC.MainPage
+                userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_64_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 65:   //  MultiporterC.NewMeasurement
                 userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentDialog"));
-                userType.Activator = Activate_61_NewMeasurement;
+                userType.Activator = Activate_65_NewMeasurement;
                 userType.AddMemberName("MeasurementName");
                 userType.AddMemberName("UnitName");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 66:   //  MultiporterC.UserPage
+                userType = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_66_UserPage;
+                userType.AddMemberName("Username");
+                userType.AddMemberName("Fullname");
+                userType.AddMemberName("Email");
+                userType.AddMemberName("Experiments");
+                userType.AddMemberName("Points");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -1087,295 +1149,300 @@ namespace MultiporterC.MultiporterC_XamlTypeInfo
             var that = (global::MultiporterC.CardListTemplateSelector)instance;
             that.DataTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_23_CardListTemplateSelector_VariableTemplate(object instance)
+        private object get_23_CardListTemplateSelector_DataScatterTemplate(object instance)
+        {
+            var that = (global::MultiporterC.CardListTemplateSelector)instance;
+            return that.DataScatterTemplate;
+        }
+        private void set_23_CardListTemplateSelector_DataScatterTemplate(object instance, object Value)
+        {
+            var that = (global::MultiporterC.CardListTemplateSelector)instance;
+            that.DataScatterTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_24_CardListTemplateSelector_DataBarTemplate(object instance)
+        {
+            var that = (global::MultiporterC.CardListTemplateSelector)instance;
+            return that.DataBarTemplate;
+        }
+        private void set_24_CardListTemplateSelector_DataBarTemplate(object instance, object Value)
+        {
+            var that = (global::MultiporterC.CardListTemplateSelector)instance;
+            that.DataBarTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_25_CardListTemplateSelector_VariableTemplate(object instance)
         {
             var that = (global::MultiporterC.CardListTemplateSelector)instance;
             return that.VariableTemplate;
         }
-        private void set_23_CardListTemplateSelector_VariableTemplate(object instance, object Value)
+        private void set_25_CardListTemplateSelector_VariableTemplate(object instance, object Value)
         {
             var that = (global::MultiporterC.CardListTemplateSelector)instance;
             that.VariableTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_24_CardListTemplateSelector_QuantitativeTemplate(object instance)
+        private object get_26_CardListTemplateSelector_QuantitativeTemplate(object instance)
         {
             var that = (global::MultiporterC.CardListTemplateSelector)instance;
             return that.QuantitativeTemplate;
         }
-        private void set_24_CardListTemplateSelector_QuantitativeTemplate(object instance, object Value)
+        private void set_26_CardListTemplateSelector_QuantitativeTemplate(object instance, object Value)
         {
             var that = (global::MultiporterC.CardListTemplateSelector)instance;
             that.QuantitativeTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_25_CardListTemplateSelector_MaterialTemplate(object instance)
+        private object get_27_CardListTemplateSelector_MaterialTemplate(object instance)
         {
             var that = (global::MultiporterC.CardListTemplateSelector)instance;
             return that.MaterialTemplate;
         }
-        private void set_25_CardListTemplateSelector_MaterialTemplate(object instance, object Value)
+        private void set_27_CardListTemplateSelector_MaterialTemplate(object instance, object Value)
         {
             var that = (global::MultiporterC.CardListTemplateSelector)instance;
             that.MaterialTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_26_CardListTemplateSelector_TrialTemplate(object instance)
+        private object get_28_CardListTemplateSelector_TrialTemplate(object instance)
         {
             var that = (global::MultiporterC.CardListTemplateSelector)instance;
             return that.TrialTemplate;
         }
-        private void set_26_CardListTemplateSelector_TrialTemplate(object instance, object Value)
+        private void set_28_CardListTemplateSelector_TrialTemplate(object instance, object Value)
         {
             var that = (global::MultiporterC.CardListTemplateSelector)instance;
             that.TrialTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_27_CardListTemplateSelector_ProcedureTemplate(object instance)
+        private object get_29_CardListTemplateSelector_ProcedureTemplate(object instance)
         {
             var that = (global::MultiporterC.CardListTemplateSelector)instance;
             return that.ProcedureTemplate;
         }
-        private void set_27_CardListTemplateSelector_ProcedureTemplate(object instance, object Value)
+        private void set_29_CardListTemplateSelector_ProcedureTemplate(object instance, object Value)
         {
             var that = (global::MultiporterC.CardListTemplateSelector)instance;
             that.ProcedureTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_28_CardListTemplateSelector_QualitativeTemplate(object instance)
+        private object get_30_CardListTemplateSelector_QualitativeTemplate(object instance)
         {
             var that = (global::MultiporterC.CardListTemplateSelector)instance;
             return that.QualitativeTemplate;
         }
-        private void set_28_CardListTemplateSelector_QualitativeTemplate(object instance, object Value)
+        private void set_30_CardListTemplateSelector_QualitativeTemplate(object instance, object Value)
         {
             var that = (global::MultiporterC.CardListTemplateSelector)instance;
             that.QualitativeTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_29_Chart_Series(object instance)
+        private object get_31_Chart_Series(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.Series;
         }
-        private void set_29_Chart_Series(object instance, object Value)
+        private void set_31_Chart_Series(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.Series = (global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>)Value;
         }
-        private object get_30_ISeries_LegendItems(object instance)
+        private object get_32_ISeries_LegendItems(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries)instance;
             return that.LegendItems;
         }
-        private object get_31_Chart_Title(object instance)
+        private object get_33_Chart_Title(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.Title;
         }
-        private void set_31_Chart_Title(object instance, object Value)
+        private void set_33_Chart_Title(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.Title = (global::System.Object)Value;
         }
-        private object get_32_Chart_Axes(object instance)
+        private object get_34_Chart_Axes(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.Axes;
         }
-        private void set_32_Chart_Axes(object instance, object Value)
+        private void set_34_Chart_Axes(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.Axes = (global::System.Collections.ObjectModel.Collection<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>)Value;
         }
-        private object get_33_IAxis_Orientation(object instance)
+        private object get_35_IAxis_Orientation(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
             return that.Orientation;
         }
-        private void set_33_IAxis_Orientation(object instance, object Value)
+        private void set_35_IAxis_Orientation(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
             that.Orientation = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation)Value;
         }
-        private object get_34_IAxis_RegisteredListeners(object instance)
+        private object get_36_IAxis_RegisteredListeners(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
             return that.RegisteredListeners;
         }
-        private object get_35_IAxis_DependentAxes(object instance)
+        private object get_37_IAxis_DependentAxes(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)instance;
             return that.DependentAxes;
         }
-        private object get_36_Chart_ActualAxes(object instance)
+        private object get_38_Chart_ActualAxes(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.ActualAxes;
         }
-        private object get_37_Chart_ChartAreaStyle(object instance)
+        private object get_39_Chart_ChartAreaStyle(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.ChartAreaStyle;
         }
-        private void set_37_Chart_ChartAreaStyle(object instance, object Value)
+        private void set_39_Chart_ChartAreaStyle(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.ChartAreaStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_38_Chart_LegendItems(object instance)
+        private object get_40_Chart_LegendItems(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.LegendItems;
         }
-        private object get_39_Chart_LegendStyle(object instance)
+        private object get_41_Chart_LegendStyle(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.LegendStyle;
         }
-        private void set_39_Chart_LegendStyle(object instance, object Value)
+        private void set_41_Chart_LegendStyle(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.LegendStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_40_Chart_LegendTitle(object instance)
+        private object get_42_Chart_LegendTitle(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.LegendTitle;
         }
-        private void set_40_Chart_LegendTitle(object instance, object Value)
+        private void set_42_Chart_LegendTitle(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.LegendTitle = (global::System.Object)Value;
         }
-        private object get_41_Chart_PlotAreaStyle(object instance)
+        private object get_43_Chart_PlotAreaStyle(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.PlotAreaStyle;
         }
-        private void set_41_Chart_PlotAreaStyle(object instance, object Value)
+        private void set_43_Chart_PlotAreaStyle(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.PlotAreaStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_42_Chart_Palette(object instance)
+        private object get_44_Chart_Palette(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.Palette;
         }
-        private void set_42_Chart_Palette(object instance, object Value)
+        private void set_44_Chart_Palette(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.Palette = (global::System.Collections.ObjectModel.Collection<global::Windows.UI.Xaml.ResourceDictionary>)Value;
         }
-        private object get_43_Chart_TitleStyle(object instance)
+        private object get_45_Chart_TitleStyle(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             return that.TitleStyle;
         }
-        private void set_43_Chart_TitleStyle(object instance, object Value)
+        private void set_45_Chart_TitleStyle(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart)instance;
             that.TitleStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_44_DataPointSeries_IndependentValuePath(object instance)
+        private object get_46_DataPointSeries_IndependentValuePath(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.IndependentValuePath;
         }
-        private void set_44_DataPointSeries_IndependentValuePath(object instance, object Value)
+        private void set_46_DataPointSeries_IndependentValuePath(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.IndependentValuePath = (global::System.String)Value;
         }
-        private object get_45_DataPointSeries_DependentValuePath(object instance)
+        private object get_47_DataPointSeries_DependentValuePath(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.DependentValuePath;
         }
-        private void set_45_DataPointSeries_DependentValuePath(object instance, object Value)
+        private void set_47_DataPointSeries_DependentValuePath(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.DependentValuePath = (global::System.String)Value;
         }
-        private object get_46_DataPointSeries_IsSelectionEnabled(object instance)
+        private object get_48_DataPointSeries_IsSelectionEnabled(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.IsSelectionEnabled;
         }
-        private void set_46_DataPointSeries_IsSelectionEnabled(object instance, object Value)
+        private void set_48_DataPointSeries_IsSelectionEnabled(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.IsSelectionEnabled = (global::System.Boolean)Value;
         }
-        private object get_47_DataPointSeries_ItemsSource(object instance)
+        private object get_49_DataPointSeries_ItemsSource(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.ItemsSource;
         }
-        private void set_47_DataPointSeries_ItemsSource(object instance, object Value)
+        private void set_49_DataPointSeries_ItemsSource(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.ItemsSource = (global::System.Collections.IEnumerable)Value;
         }
-        private object get_48_DataPointSeries_IndependentValueBinding(object instance)
+        private object get_50_DataPointSeries_IndependentValueBinding(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.IndependentValueBinding;
         }
-        private void set_48_DataPointSeries_IndependentValueBinding(object instance, object Value)
+        private void set_50_DataPointSeries_IndependentValueBinding(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.IndependentValueBinding = (global::Windows.UI.Xaml.Data.Binding)Value;
         }
-        private object get_49_DataPointSeries_DependentValueBinding(object instance)
+        private object get_51_DataPointSeries_DependentValueBinding(object instance)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             return that.DependentValueBinding;
         }
-        private void set_49_DataPointSeries_DependentValueBinding(object instance, object Value)
+        private void set_51_DataPointSeries_DependentValueBinding(object instance, object Value)
         {
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries)instance;
             that.DependentValueBinding = (global::Windows.UI.Xaml.Data.Binding)Value;
         }
-        private object get_50_LineSeries_Points(object instance)
+        private object get_52_ColumnBarBaseSeries_DependentRangeAxis(object instance)
         {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries)instance;
-            return that.Points;
-        }
-        private object get_51_LineSeries_PolylineStyle(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries)instance;
-            return that.PolylineStyle;
-        }
-        private void set_51_LineSeries_PolylineStyle(object instance, object Value)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries)instance;
-            that.PolylineStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_52_LineAreaBaseSeries_DependentRangeAxis(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
             return that.DependentRangeAxis;
         }
-        private void set_52_LineAreaBaseSeries_DependentRangeAxis(object instance, object Value)
+        private void set_52_ColumnBarBaseSeries_DependentRangeAxis(object instance, object Value)
         {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
             that.DependentRangeAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis)Value;
         }
-        private object get_53_LineAreaBaseSeries_IndependentAxis(object instance)
+        private object get_53_ColumnBarBaseSeries_IndependentAxis(object instance)
         {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
             return that.IndependentAxis;
         }
-        private void set_53_LineAreaBaseSeries_IndependentAxis(object instance, object Value)
+        private void set_53_ColumnBarBaseSeries_IndependentAxis(object instance, object Value)
         {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
             that.IndependentAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)Value;
         }
-        private object get_54_LineAreaBaseSeries_ActualIndependentAxis(object instance)
+        private object get_54_ColumnBarBaseSeries_ActualDependentRangeAxis(object instance)
         {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
-            return that.ActualIndependentAxis;
-        }
-        private object get_55_LineAreaBaseSeries_ActualDependentRangeAxis(object instance)
-        {
-            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
             return that.ActualDependentRangeAxis;
+        }
+        private object get_55_ColumnBarBaseSeries_ActualIndependentAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>)instance;
+            return that.ActualIndependentAxis;
         }
         private object get_56_DataPointSingleSeriesWithAxes_GlobalSeriesIndex(object instance)
         {
@@ -1467,25 +1534,145 @@ namespace MultiporterC.MultiporterC_XamlTypeInfo
             var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.Series)instance;
             that.Title = (global::System.Object)Value;
         }
-        private object get_66_NewMeasurement_MeasurementName(object instance)
+        private object get_66_ScatterSeries_ActualDependentRangeAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries)instance;
+            return that.ActualDependentRangeAxis;
+        }
+        private object get_67_ScatterSeries_DependentRangeAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries)instance;
+            return that.DependentRangeAxis;
+        }
+        private void set_67_ScatterSeries_DependentRangeAxis(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries)instance;
+            that.DependentRangeAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis)Value;
+        }
+        private object get_68_ScatterSeries_ActualIndependentAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries)instance;
+            return that.ActualIndependentAxis;
+        }
+        private object get_69_ScatterSeries_IndependentAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries)instance;
+            return that.IndependentAxis;
+        }
+        private void set_69_ScatterSeries_IndependentAxis(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries)instance;
+            that.IndependentAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)Value;
+        }
+        private object get_70_LineSeries_Points(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries)instance;
+            return that.Points;
+        }
+        private object get_71_LineSeries_PolylineStyle(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries)instance;
+            return that.PolylineStyle;
+        }
+        private void set_71_LineSeries_PolylineStyle(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries)instance;
+            that.PolylineStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_72_LineAreaBaseSeries_DependentRangeAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            return that.DependentRangeAxis;
+        }
+        private void set_72_LineAreaBaseSeries_DependentRangeAxis(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            that.DependentRangeAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis)Value;
+        }
+        private object get_73_LineAreaBaseSeries_IndependentAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            return that.IndependentAxis;
+        }
+        private void set_73_LineAreaBaseSeries_IndependentAxis(object instance, object Value)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            that.IndependentAxis = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis)Value;
+        }
+        private object get_74_LineAreaBaseSeries_ActualIndependentAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            return that.ActualIndependentAxis;
+        }
+        private object get_75_LineAreaBaseSeries_ActualDependentRangeAxis(object instance)
+        {
+            var that = (global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries<global::WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>)instance;
+            return that.ActualDependentRangeAxis;
+        }
+        private object get_76_LoginPage_Username(object instance)
+        {
+            var that = (global::MultiporterC.LoginPage)instance;
+            return that.Username;
+        }
+        private void set_76_LoginPage_Username(object instance, object Value)
+        {
+            var that = (global::MultiporterC.LoginPage)instance;
+            that.Username = (global::System.String)Value;
+        }
+        private object get_77_LoginPage_Password(object instance)
+        {
+            var that = (global::MultiporterC.LoginPage)instance;
+            return that.Password;
+        }
+        private void set_77_LoginPage_Password(object instance, object Value)
+        {
+            var that = (global::MultiporterC.LoginPage)instance;
+            that.Password = (global::System.String)Value;
+        }
+        private object get_78_NewMeasurement_MeasurementName(object instance)
         {
             var that = (global::MultiporterC.NewMeasurement)instance;
             return that.MeasurementName;
         }
-        private void set_66_NewMeasurement_MeasurementName(object instance, object Value)
+        private void set_78_NewMeasurement_MeasurementName(object instance, object Value)
         {
             var that = (global::MultiporterC.NewMeasurement)instance;
             that.MeasurementName = (global::System.String)Value;
         }
-        private object get_67_NewMeasurement_UnitName(object instance)
+        private object get_79_NewMeasurement_UnitName(object instance)
         {
             var that = (global::MultiporterC.NewMeasurement)instance;
             return that.UnitName;
         }
-        private void set_67_NewMeasurement_UnitName(object instance, object Value)
+        private void set_79_NewMeasurement_UnitName(object instance, object Value)
         {
             var that = (global::MultiporterC.NewMeasurement)instance;
             that.UnitName = (global::System.String)Value;
+        }
+        private object get_80_UserPage_Username(object instance)
+        {
+            var that = (global::MultiporterC.UserPage)instance;
+            return that.Username;
+        }
+        private object get_81_UserPage_Fullname(object instance)
+        {
+            var that = (global::MultiporterC.UserPage)instance;
+            return that.Fullname;
+        }
+        private object get_82_UserPage_Email(object instance)
+        {
+            var that = (global::MultiporterC.UserPage)instance;
+            return that.Email;
+        }
+        private object get_83_UserPage_Experiments(object instance)
+        {
+            var that = (global::MultiporterC.UserPage)instance;
+            return that.Experiments;
+        }
+        private object get_84_UserPage_Points(object instance)
+        {
+            var that = (global::MultiporterC.UserPage)instance;
+            return that.Points;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -1633,215 +1820,213 @@ namespace MultiporterC.MultiporterC_XamlTypeInfo
                 xamlMember.Getter = get_22_CardListTemplateSelector_DataTemplate;
                 xamlMember.Setter = set_22_CardListTemplateSelector_DataTemplate;
                 break;
+            case "MultiporterC.CardListTemplateSelector.DataScatterTemplate":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.CardListTemplateSelector");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "DataScatterTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.Getter = get_23_CardListTemplateSelector_DataScatterTemplate;
+                xamlMember.Setter = set_23_CardListTemplateSelector_DataScatterTemplate;
+                break;
+            case "MultiporterC.CardListTemplateSelector.DataBarTemplate":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.CardListTemplateSelector");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "DataBarTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.Getter = get_24_CardListTemplateSelector_DataBarTemplate;
+                xamlMember.Setter = set_24_CardListTemplateSelector_DataBarTemplate;
+                break;
             case "MultiporterC.CardListTemplateSelector.VariableTemplate":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.CardListTemplateSelector");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "VariableTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_23_CardListTemplateSelector_VariableTemplate;
-                xamlMember.Setter = set_23_CardListTemplateSelector_VariableTemplate;
+                xamlMember.Getter = get_25_CardListTemplateSelector_VariableTemplate;
+                xamlMember.Setter = set_25_CardListTemplateSelector_VariableTemplate;
                 break;
             case "MultiporterC.CardListTemplateSelector.QuantitativeTemplate":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.CardListTemplateSelector");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "QuantitativeTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_24_CardListTemplateSelector_QuantitativeTemplate;
-                xamlMember.Setter = set_24_CardListTemplateSelector_QuantitativeTemplate;
+                xamlMember.Getter = get_26_CardListTemplateSelector_QuantitativeTemplate;
+                xamlMember.Setter = set_26_CardListTemplateSelector_QuantitativeTemplate;
                 break;
             case "MultiporterC.CardListTemplateSelector.MaterialTemplate":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.CardListTemplateSelector");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "MaterialTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_25_CardListTemplateSelector_MaterialTemplate;
-                xamlMember.Setter = set_25_CardListTemplateSelector_MaterialTemplate;
+                xamlMember.Getter = get_27_CardListTemplateSelector_MaterialTemplate;
+                xamlMember.Setter = set_27_CardListTemplateSelector_MaterialTemplate;
                 break;
             case "MultiporterC.CardListTemplateSelector.TrialTemplate":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.CardListTemplateSelector");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "TrialTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_26_CardListTemplateSelector_TrialTemplate;
-                xamlMember.Setter = set_26_CardListTemplateSelector_TrialTemplate;
+                xamlMember.Getter = get_28_CardListTemplateSelector_TrialTemplate;
+                xamlMember.Setter = set_28_CardListTemplateSelector_TrialTemplate;
                 break;
             case "MultiporterC.CardListTemplateSelector.ProcedureTemplate":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.CardListTemplateSelector");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "ProcedureTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_27_CardListTemplateSelector_ProcedureTemplate;
-                xamlMember.Setter = set_27_CardListTemplateSelector_ProcedureTemplate;
+                xamlMember.Getter = get_29_CardListTemplateSelector_ProcedureTemplate;
+                xamlMember.Setter = set_29_CardListTemplateSelector_ProcedureTemplate;
                 break;
             case "MultiporterC.CardListTemplateSelector.QualitativeTemplate":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.CardListTemplateSelector");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "QualitativeTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_28_CardListTemplateSelector_QualitativeTemplate;
-                xamlMember.Setter = set_28_CardListTemplateSelector_QualitativeTemplate;
+                xamlMember.Getter = get_30_CardListTemplateSelector_QualitativeTemplate;
+                xamlMember.Setter = set_30_CardListTemplateSelector_QualitativeTemplate;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Series":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Series", "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries>");
-                xamlMember.Getter = get_29_Chart_Series;
-                xamlMember.Setter = set_29_Chart_Series;
+                xamlMember.Getter = get_31_Chart_Series;
+                xamlMember.Setter = set_31_Chart_Series;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries.LegendItems":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ISeries");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "LegendItems", "System.Collections.ObjectModel.ObservableCollection`1<Object>");
-                xamlMember.Getter = get_30_ISeries_LegendItems;
+                xamlMember.Getter = get_32_ISeries_LegendItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Title":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Title", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_Chart_Title;
-                xamlMember.Setter = set_31_Chart_Title;
+                xamlMember.Getter = get_33_Chart_Title;
+                xamlMember.Setter = set_33_Chart_Title;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Axes":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Axes", "System.Collections.ObjectModel.Collection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>");
-                xamlMember.Getter = get_32_Chart_Axes;
-                xamlMember.Setter = set_32_Chart_Axes;
+                xamlMember.Getter = get_34_Chart_Axes;
+                xamlMember.Setter = set_34_Chart_Axes;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis.Orientation":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Orientation", "WinRTXamlToolkit.Controls.DataVisualization.Charting.AxisOrientation");
-                xamlMember.Getter = get_33_IAxis_Orientation;
-                xamlMember.Setter = set_33_IAxis_Orientation;
+                xamlMember.Getter = get_35_IAxis_Orientation;
+                xamlMember.Setter = set_35_IAxis_Orientation;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis.RegisteredListeners":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "RegisteredListeners", "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxisListener>");
-                xamlMember.Getter = get_34_IAxis_RegisteredListeners;
+                xamlMember.Getter = get_36_IAxis_RegisteredListeners;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis.DependentAxes":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "DependentAxes", "System.Collections.ObjectModel.ObservableCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>");
-                xamlMember.Getter = get_35_IAxis_DependentAxes;
+                xamlMember.Getter = get_37_IAxis_DependentAxes;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.ActualAxes":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "ActualAxes", "System.Collections.ObjectModel.ReadOnlyCollection`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis>");
-                xamlMember.Getter = get_36_Chart_ActualAxes;
+                xamlMember.Getter = get_38_Chart_ActualAxes;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.ChartAreaStyle":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "ChartAreaStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_37_Chart_ChartAreaStyle;
-                xamlMember.Setter = set_37_Chart_ChartAreaStyle;
+                xamlMember.Getter = get_39_Chart_ChartAreaStyle;
+                xamlMember.Setter = set_39_Chart_ChartAreaStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.LegendItems":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "LegendItems", "System.Collections.ObjectModel.Collection`1<Object>");
-                xamlMember.Getter = get_38_Chart_LegendItems;
+                xamlMember.Getter = get_40_Chart_LegendItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.LegendStyle":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "LegendStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_39_Chart_LegendStyle;
-                xamlMember.Setter = set_39_Chart_LegendStyle;
+                xamlMember.Getter = get_41_Chart_LegendStyle;
+                xamlMember.Setter = set_41_Chart_LegendStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.LegendTitle":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "LegendTitle", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_40_Chart_LegendTitle;
-                xamlMember.Setter = set_40_Chart_LegendTitle;
+                xamlMember.Getter = get_42_Chart_LegendTitle;
+                xamlMember.Setter = set_42_Chart_LegendTitle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.PlotAreaStyle":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "PlotAreaStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_41_Chart_PlotAreaStyle;
-                xamlMember.Setter = set_41_Chart_PlotAreaStyle;
+                xamlMember.Getter = get_43_Chart_PlotAreaStyle;
+                xamlMember.Setter = set_43_Chart_PlotAreaStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.Palette":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Palette", "System.Collections.ObjectModel.Collection`1<Windows.UI.Xaml.ResourceDictionary>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_42_Chart_Palette;
-                xamlMember.Setter = set_42_Chart_Palette;
+                xamlMember.Getter = get_44_Chart_Palette;
+                xamlMember.Setter = set_44_Chart_Palette;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart.TitleStyle":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.Chart");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "TitleStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_43_Chart_TitleStyle;
-                xamlMember.Setter = set_43_Chart_TitleStyle;
+                xamlMember.Getter = get_45_Chart_TitleStyle;
+                xamlMember.Setter = set_45_Chart_TitleStyle;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.IndependentValuePath":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "IndependentValuePath", "String");
-                xamlMember.Getter = get_44_DataPointSeries_IndependentValuePath;
-                xamlMember.Setter = set_44_DataPointSeries_IndependentValuePath;
+                xamlMember.Getter = get_46_DataPointSeries_IndependentValuePath;
+                xamlMember.Setter = set_46_DataPointSeries_IndependentValuePath;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.DependentValuePath":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "DependentValuePath", "String");
-                xamlMember.Getter = get_45_DataPointSeries_DependentValuePath;
-                xamlMember.Setter = set_45_DataPointSeries_DependentValuePath;
+                xamlMember.Getter = get_47_DataPointSeries_DependentValuePath;
+                xamlMember.Setter = set_47_DataPointSeries_DependentValuePath;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.IsSelectionEnabled":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "IsSelectionEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_46_DataPointSeries_IsSelectionEnabled;
-                xamlMember.Setter = set_46_DataPointSeries_IsSelectionEnabled;
+                xamlMember.Getter = get_48_DataPointSeries_IsSelectionEnabled;
+                xamlMember.Setter = set_48_DataPointSeries_IsSelectionEnabled;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.ItemsSource":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "ItemsSource", "System.Collections.IEnumerable");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_47_DataPointSeries_ItemsSource;
-                xamlMember.Setter = set_47_DataPointSeries_ItemsSource;
+                xamlMember.Getter = get_49_DataPointSeries_ItemsSource;
+                xamlMember.Setter = set_49_DataPointSeries_ItemsSource;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.IndependentValueBinding":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "IndependentValueBinding", "Windows.UI.Xaml.Data.Binding");
-                xamlMember.Getter = get_48_DataPointSeries_IndependentValueBinding;
-                xamlMember.Setter = set_48_DataPointSeries_IndependentValueBinding;
+                xamlMember.Getter = get_50_DataPointSeries_IndependentValueBinding;
+                xamlMember.Setter = set_50_DataPointSeries_IndependentValueBinding;
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries.DependentValueBinding":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSeries");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "DependentValueBinding", "Windows.UI.Xaml.Data.Binding");
-                xamlMember.Getter = get_49_DataPointSeries_DependentValueBinding;
-                xamlMember.Setter = set_49_DataPointSeries_DependentValueBinding;
+                xamlMember.Getter = get_51_DataPointSeries_DependentValueBinding;
+                xamlMember.Setter = set_51_DataPointSeries_DependentValueBinding;
                 break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries.Points":
-                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries");
-                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Points", "Windows.UI.Xaml.Media.PointCollection");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_50_LineSeries_Points;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries.PolylineStyle":
-                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries");
-                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "PolylineStyle", "Windows.UI.Xaml.Style");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_51_LineSeries_PolylineStyle;
-                xamlMember.Setter = set_51_LineSeries_PolylineStyle;
-                break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>.DependentRangeAxis":
-                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>");
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>.DependentRangeAxis":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "DependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_52_LineAreaBaseSeries_DependentRangeAxis;
-                xamlMember.Setter = set_52_LineAreaBaseSeries_DependentRangeAxis;
+                xamlMember.Getter = get_52_ColumnBarBaseSeries_DependentRangeAxis;
+                xamlMember.Setter = set_52_ColumnBarBaseSeries_DependentRangeAxis;
                 break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>.IndependentAxis":
-                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>");
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>.IndependentAxis":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "IndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_53_LineAreaBaseSeries_IndependentAxis;
-                xamlMember.Setter = set_53_LineAreaBaseSeries_IndependentAxis;
+                xamlMember.Getter = get_53_ColumnBarBaseSeries_IndependentAxis;
+                xamlMember.Setter = set_53_ColumnBarBaseSeries_IndependentAxis;
                 break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>.ActualIndependentAxis":
-                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>");
-                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "ActualIndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
-                xamlMember.Getter = get_54_LineAreaBaseSeries_ActualIndependentAxis;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>.ActualDependentRangeAxis":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "ActualDependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
+                xamlMember.Getter = get_54_ColumnBarBaseSeries_ActualDependentRangeAxis;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>.ActualDependentRangeAxis":
-                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>");
-                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "ActualDependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
-                xamlMember.Getter = get_55_LineAreaBaseSeries_ActualDependentRangeAxis;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>.ActualIndependentAxis":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnBarBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnDataPoint>");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "ActualIndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
+                xamlMember.Getter = get_55_ColumnBarBaseSeries_ActualIndependentAxis;
                 xamlMember.SetIsReadOnly();
                 break;
             case "WinRTXamlToolkit.Controls.DataVisualization.Charting.DataPointSingleSeriesWithAxes.GlobalSeriesIndex":
@@ -1912,17 +2097,125 @@ namespace MultiporterC.MultiporterC_XamlTypeInfo
                 xamlMember.Getter = get_65_Series_Title;
                 xamlMember.Setter = set_65_Series_Title;
                 break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries.ActualDependentRangeAxis":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "ActualDependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
+                xamlMember.Getter = get_66_ScatterSeries_ActualDependentRangeAxis;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries.DependentRangeAxis":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "DependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_67_ScatterSeries_DependentRangeAxis;
+                xamlMember.Setter = set_67_ScatterSeries_DependentRangeAxis;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries.ActualIndependentAxis":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "ActualIndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
+                xamlMember.Getter = get_68_ScatterSeries_ActualIndependentAxis;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries.IndependentAxis":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "IndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_69_ScatterSeries_IndependentAxis;
+                xamlMember.Setter = set_69_ScatterSeries_IndependentAxis;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries.Points":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Points", "Windows.UI.Xaml.Media.PointCollection");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_70_LineSeries_Points;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries.PolylineStyle":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "PolylineStyle", "Windows.UI.Xaml.Style");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_71_LineSeries_PolylineStyle;
+                xamlMember.Setter = set_71_LineSeries_PolylineStyle;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>.DependentRangeAxis":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "DependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_72_LineAreaBaseSeries_DependentRangeAxis;
+                xamlMember.Setter = set_72_LineAreaBaseSeries_DependentRangeAxis;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>.IndependentAxis":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "IndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_73_LineAreaBaseSeries_IndependentAxis;
+                xamlMember.Setter = set_73_LineAreaBaseSeries_IndependentAxis;
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>.ActualIndependentAxis":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "ActualIndependentAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IAxis");
+                xamlMember.Getter = get_74_LineAreaBaseSeries_ActualIndependentAxis;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>.ActualDependentRangeAxis":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WinRTXamlToolkit.Controls.DataVisualization.Charting.LineAreaBaseSeries`1<WinRTXamlToolkit.Controls.DataVisualization.Charting.LineDataPoint>");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "ActualDependentRangeAxis", "WinRTXamlToolkit.Controls.DataVisualization.Charting.IRangeAxis");
+                xamlMember.Getter = get_75_LineAreaBaseSeries_ActualDependentRangeAxis;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MultiporterC.LoginPage.Username":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.LoginPage");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Username", "String");
+                xamlMember.Getter = get_76_LoginPage_Username;
+                xamlMember.Setter = set_76_LoginPage_Username;
+                break;
+            case "MultiporterC.LoginPage.Password":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.LoginPage");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Password", "String");
+                xamlMember.Getter = get_77_LoginPage_Password;
+                xamlMember.Setter = set_77_LoginPage_Password;
+                break;
             case "MultiporterC.NewMeasurement.MeasurementName":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.NewMeasurement");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "MeasurementName", "String");
-                xamlMember.Getter = get_66_NewMeasurement_MeasurementName;
-                xamlMember.Setter = set_66_NewMeasurement_MeasurementName;
+                xamlMember.Getter = get_78_NewMeasurement_MeasurementName;
+                xamlMember.Setter = set_78_NewMeasurement_MeasurementName;
                 break;
             case "MultiporterC.NewMeasurement.UnitName":
                 userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.NewMeasurement");
                 xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "UnitName", "String");
-                xamlMember.Getter = get_67_NewMeasurement_UnitName;
-                xamlMember.Setter = set_67_NewMeasurement_UnitName;
+                xamlMember.Getter = get_79_NewMeasurement_UnitName;
+                xamlMember.Setter = set_79_NewMeasurement_UnitName;
+                break;
+            case "MultiporterC.UserPage.Username":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.UserPage");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Username", "String");
+                xamlMember.Getter = get_80_UserPage_Username;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MultiporterC.UserPage.Fullname":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.UserPage");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Fullname", "String");
+                xamlMember.Getter = get_81_UserPage_Fullname;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MultiporterC.UserPage.Email":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.UserPage");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Email", "String");
+                xamlMember.Getter = get_82_UserPage_Email;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MultiporterC.UserPage.Experiments":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.UserPage");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Experiments", "String");
+                xamlMember.Getter = get_83_UserPage_Experiments;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MultiporterC.UserPage.Points":
+                userType = (global::MultiporterC.MultiporterC_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MultiporterC.UserPage");
+                xamlMember = new global::MultiporterC.MultiporterC_XamlTypeInfo.XamlMember(this, "Points", "String");
+                xamlMember.Getter = get_84_UserPage_Points;
+                xamlMember.SetIsReadOnly();
                 break;
             }
             return xamlMember;

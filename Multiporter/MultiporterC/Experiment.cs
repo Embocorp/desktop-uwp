@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -36,6 +37,43 @@ namespace MultiporterC
             Cards.Remove(deleteNode);
         }
 
+        public async void Create ()
+        {
+            await Task.Run(async () =>
+            {
+                // Create sample file; replace if exists.
+                Windows.Storage.StorageFolder storageFolder =
+                    Windows.Storage.ApplicationData.Current.LocalFolder;
+                Windows.Storage.StorageFile sampleFile =
+                    await storageFolder.CreateFileAsync(FileName + ".mport",
+                    Windows.Storage.CreationCollisionOption.ReplaceExisting);
+                string fileserial = Serialize.Xml_Serialize_Object<Experiment>((Experiment)this);
+                Dictionary<string, object> o = new Dictionary<string, object>();
+                o.Add("usertoken", Windows.Storage.ApplicationData.Current.LocalSettings.Values["usertoken"]);
+                o.Add("experiment", this);
+                try
+                {
+                    try
+                    {
+                        await Windows.Storage.FileIO.WriteBytesAsync(sampleFile, Encoding.UTF8.GetBytes(fileserial));
+                        Dictionary<string, object> d = await HttpHelpers.Post<Dictionary<string, object>>(o, "experiment");
+                        if ((bool)d["success"] == true)
+                        {
+                            Debug.WriteLine("Yay!");
+                        }
+                    }
+                    catch
+                    {
+                        Debug.WriteLine("Failed to Save Experiment");
+                    }
+                }
+                catch (Exception e)
+                {
+                    Debug.WriteLine(e.Message);
+                }
+            });
+        }
+
         public async void Save()
         {
             await Task.Run(async () =>
@@ -46,10 +84,29 @@ namespace MultiporterC
                 Windows.Storage.StorageFile sampleFile =
                     await storageFolder.CreateFileAsync(FileName + ".mport",
                     Windows.Storage.CreationCollisionOption.ReplaceExisting);
-                string serial = Serialize.Serialize_Object<Experiment>(this);
+                JsonSerializerSettings settings = new JsonSerializerSettings
+                {
+                    TypeNameHandling = TypeNameHandling.All
+                };
+                string fileserial = Serialize.Xml_Serialize_Object<Experiment>((Experiment)this);
+                Dictionary<string, object> o = new Dictionary<string, object>();
+                o.Add("usertoken", Windows.Storage.ApplicationData.Current.LocalSettings.Values["usertoken"]);
+                o.Add("experiment", this);
                 try
                 {
-                    await Windows.Storage.FileIO.WriteBytesAsync(sampleFile, Encoding.UTF8.GetBytes(serial));
+                    try
+                    {
+                        await Windows.Storage.FileIO.WriteBytesAsync(sampleFile, Encoding.UTF8.GetBytes(fileserial));
+                        Dictionary<string, object> d = await HttpHelpers.Put<Dictionary<string, object>>(o, "experiment");
+                        if ((bool)d["success"] == true)
+                        {
+                            Debug.WriteLine("Yay!");
+                        }
+                    }
+                    catch
+                    {
+                        Debug.WriteLine("Failed to Save Experiment");
+                    }
                 }
                 catch (Exception e)
                 {
@@ -81,6 +138,7 @@ namespace MultiporterC
         public async Task Save_Thumbnail(StorageFile f)
         {
             Stream x = await f.OpenStreamForReadAsync();
+            //Debug.WriteLine(x.Length);
             byte[] buffer = new byte[16*1024];
             using (MemoryStream ms = new MemoryStream())
             {
@@ -89,8 +147,8 @@ namespace MultiporterC
                 {
                     ms.Write(buffer, 0, read);
                 }
+
                 Thumbnail = Convert.ToBase64String(ms.ToArray());
-                Debug.WriteLine(Thumbnail);
             }
         }
 
@@ -115,11 +173,15 @@ namespace MultiporterC
         public string Thumbnail { get; set; }
         public ExperimentVisibility Sharing { get; set; }
         public User[] Contributors { get; set; }
+
+        [JsonIgnoreAttribute]
         public Device[] Devices { get; set; }
 
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public BitmapImage BMPThumb { get; set; }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public string Thumnbail_Handler { set { Thumbnail = value; OnPropertyChanged("BMPThumb"); } }
 
         public enum ExperimentVisibility { Visible, Private };

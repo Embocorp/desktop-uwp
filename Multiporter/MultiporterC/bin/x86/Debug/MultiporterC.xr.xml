@@ -11,6 +11,10 @@
     <RootPropertyPathName Name="Description" />
     <RootPropertyPathName Name="UnitName" />
     <RootPropertyPathName Name="MeasurementName" />
+    <RootPropertyPathName Name="Message" />
+    <RootPropertyPathName Name="Time" />
+    <RootPropertyPathName Name="Experiment" />
+    <RootPropertyPathName Name="Pic" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -26,6 +30,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="Foreground" />
       <RootProperty Name="Template" />
+      <RootProperty Name="HorizontalContentAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
@@ -136,9 +141,12 @@
       <RootProperty Name="Background" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Content" />
+      <RootEvent Name="ViewChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="HorizontalAlignment" />
@@ -147,6 +155,7 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="ItemTemplateSelector" />
+      <RootProperty Name="ItemContainerStyle" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -204,6 +213,8 @@
       <RootProperty Name="Height" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Visibility" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.Popup">
       <RootProperty Name="VerticalOffset" />
@@ -216,6 +227,8 @@
     <RootType FullName="MultiporterC.CardListTemplateSelector">
       <RootProperty Name="TextTemplate" />
       <RootProperty Name="DataTemplate" />
+      <RootProperty Name="DataScatterTemplate" />
+      <RootProperty Name="DataBarTemplate" />
       <RootProperty Name="VariableTemplate" />
       <RootProperty Name="QuantitativeTemplate" />
       <RootProperty Name="MaterialTemplate" />
@@ -228,8 +241,9 @@
       <RootProperty Name="DataContext" />
       <RootProperty Name="Title" />
       <RootProperty Name="Series" />
+      <RootProperty Name="Name" />
     </RootType>
-    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries">
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.ColumnSeries">
       <RootProperty Name="Margin" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="IndependentValuePath" />
@@ -241,6 +255,25 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.RotateTransform">
       <RootProperty Name="Angle" />
+    </RootType>
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.ScatterSeries">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="IndependentValuePath" />
+      <RootProperty Name="DependentValuePath" />
+      <RootProperty Name="IsSelectionEnabled" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="IndependentValueBinding" />
+      <RootProperty Name="DependentValueBinding" />
+    </RootType>
+    <RootType FullName="WinRTXamlToolkit.Controls.DataVisualization.Charting.LineSeries">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IndependentValuePath" />
+      <RootProperty Name="DependentValuePath" />
+      <RootProperty Name="IsSelectionEnabled" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="IndependentValueBinding" />
+      <RootProperty Name="DependentValueBinding" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Imaging.BitmapImage">
       <RootProperty Name="UriSource" />
@@ -269,10 +302,21 @@
       <RootMethod Name="SetToolTip" />
     </RootType>
     <RootType FullName="MultiporterC.Explorer" />
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Password" />
+      <RootProperty Name="MinWidth" />
+    </RootType>
+    <RootType FullName="MultiporterC.LoginPage" />
     <RootType FullName="MultiporterC.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="MultiporterC.NewMeasurement" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
+    <RootType FullName="MultiporterC.UserPage" />
   </Roots.RootTypes>
 </Roots>

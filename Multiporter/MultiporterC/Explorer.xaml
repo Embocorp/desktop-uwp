@@ -275,13 +275,13 @@
                             </common:LayoutTransformer>
                             <Charting:Chart HorizontalAlignment="Center" VerticalAlignment="Center" 
                                             Width="600" Height="400" DataContext="{x:Bind}"
-                                            Title="{x:Bind Title}" >
+                                            Title="{x:Bind Title, Mode=OneWay}"
+                                            Name="chart">
                                 <Charting:LineSeries Margin="0" 
-                                                     DataContext="{x:Bind}"
                                                      IndependentValuePath="Name" DependentValuePath="Amount" 
                                                      IsSelectionEnabled="True" ItemsSource="{x:Bind Path=Data, Mode=OneWay}"
-                                                     IndependentValueBinding="{Binding X}"
-                                                     DependentValueBinding="{Binding Y}">
+                                                     IndependentValueBinding="{Binding X, Mode=OneWay}"
+                                                     DependentValueBinding="{Binding Y, Mode=OneWay}">
                                 </Charting:LineSeries>
                             </Charting:Chart>
                         </StackPanel>
@@ -292,6 +292,113 @@
             </Border>
         </DataTemplate>
 
+        <DataTemplate x:Key="dataScatterTemplate" 
+                      x:DataType="local:DataChartNode">
+            <Border BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
+                <StackPanel Background="White" Padding="20" Orientation="Vertical" Width="700">
+                    <Border BorderThickness="0, 0, 0, 1" BorderBrush="#E0E0E0" Margin="0, 0, 0, 10">
+                        <Grid Padding="0, 0, 0, 10">
+                            <TextBlock Text="{x:Bind Name}" FontSize="24" Foreground="Black" 
+                                       VerticalAlignment="Center" HorizontalAlignment="Left"
+                                       Margin="0, 0, 60, 0" TextWrapping="WrapWholeWords"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" 
+                                        VerticalAlignment="Center"
+                                        Margin="20, 0, 0, 0">
+                                <Button Content="&#xE946;" Background="Transparent"
+                                        FontFamily="Segoe MDL2 Assets"
+                                        FontSize="24"
+                                        Margin="2, 0"/>
+                                <Button Content="&#xE74D;"
+                                        Background="Transparent"
+                                        FontFamily="Segoe MDL2 Assets"
+                                        FontSize="24"
+                                        Margin="2, 0"
+                                        Click="Delete_Card_Click"
+                                        Tag="{x:Bind}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <common:LayoutTransformer VerticalAlignment="Center"
+                                                      Margin="0, 0, 10, 0">
+                                <common:LayoutTransformer.LayoutTransform>
+                                    <RotateTransform Angle="-90" />
+                                </common:LayoutTransformer.LayoutTransform>
+                                <TextBlock Text="{x:Bind Path=Y_Axis_Name, Mode=OneWay}" />
+                            </common:LayoutTransformer>
+                            <Charting:Chart HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                            Width="600" Height="400" DataContext="{x:Bind}"
+                                            Title="{x:Bind Title}" >
+                                <Charting:ScatterSeries Margin="0" 
+                                                     DataContext="{x:Bind}"
+                                                     IndependentValuePath="Name" DependentValuePath="Amount" 
+                                                     IsSelectionEnabled="True" ItemsSource="{x:Bind Path=Data, Mode=OneWay}"
+                                                     IndependentValueBinding="{Binding X}"
+                                                     DependentValueBinding="{Binding Y}"/>
+
+                            </Charting:Chart>
+                        </StackPanel>
+                        <TextBlock HorizontalAlignment="Center" 
+                                   Text="{x:Bind X_Axis_Name, Mode=OneWay}"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dataBarTemplate" 
+                      x:DataType="local:DataChartNode">
+            <Border BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
+                <StackPanel Background="White" Padding="20" Orientation="Vertical" Width="700">
+                    <Border BorderThickness="0, 0, 0, 1" BorderBrush="#E0E0E0" Margin="0, 0, 0, 10">
+                        <Grid Padding="0, 0, 0, 10">
+                            <TextBlock Text="{x:Bind Name}" FontSize="24" Foreground="Black" 
+                                       VerticalAlignment="Center" HorizontalAlignment="Left"
+                                       Margin="0, 0, 60, 0" TextWrapping="WrapWholeWords"/>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" 
+                                        VerticalAlignment="Center"
+                                        Margin="20, 0, 0, 0">
+                                <Button Content="&#xE946;" Background="Transparent"
+                                        FontFamily="Segoe MDL2 Assets"
+                                        FontSize="24"
+                                        Margin="2, 0"/>
+                                <Button Content="&#xE74D;"
+                                        Background="Transparent"
+                                        FontFamily="Segoe MDL2 Assets"
+                                        FontSize="24"
+                                        Margin="2, 0"
+                                        Click="Delete_Card_Click"
+                                        Tag="{x:Bind}"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <common:LayoutTransformer VerticalAlignment="Center"
+                                                      Margin="0, 0, 10, 0">
+                                <common:LayoutTransformer.LayoutTransform>
+                                    <RotateTransform Angle="-90" />
+                                </common:LayoutTransformer.LayoutTransform>
+                                <TextBlock Text="{x:Bind Path=Y_Axis_Name, Mode=OneWay}" />
+                            </common:LayoutTransformer>
+                            <Charting:Chart HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                            Width="600" Height="400" DataContext="{x:Bind}"
+                                            Title="{x:Bind Title}" >
+                                <Charting:ColumnSeries Margin="0" 
+                                                     DataContext="{x:Bind}"
+                                                     IndependentValuePath="Name" DependentValuePath="Amount" 
+                                                     IsSelectionEnabled="True" ItemsSource="{x:Bind Path=Data, Mode=OneWay}"
+                                                     IndependentValueBinding="{Binding X}"
+                                                     DependentValueBinding="{Binding Y}" />
+                            </Charting:Chart>
+                        </StackPanel>
+                        <TextBlock HorizontalAlignment="Center" 
+                                   Text="{x:Bind X_Axis_Name, Mode=OneWay}"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+        
         <DataTemplate x:Key="materialTemplate"
                       x:DataType="local:MaterialNode">
             <Border BorderThickness="0, 0, 3, 2" BorderBrush="#E0E0E0" Margin="0, 10, 0, 10">
@@ -373,6 +480,8 @@
         <local:CardListTemplateSelector 
             TextTemplate="{StaticResource textTemplate}" 
             DataTemplate="{StaticResource dataTemplate}"
+            DataScatterTemplate="{StaticResource dataScatterTemplate}"
+            DataBarTemplate="{StaticResource dataBarTemplate}"
             VariableTemplate="{StaticResource variableTemplate}"
             QuantitativeTemplate="{StaticResource quantitativeTemplate}"
             MaterialTemplate="{StaticResource materialTemplate}"
@@ -387,23 +496,27 @@
         <SplitView.Content>
             <ScrollViewer>
                 <StackPanel Orientation="Vertical" Background="#F0F0F0" VerticalAlignment="Stretch">
-                    <Grid HorizontalAlignment="Stretch" Margin="40, 20, 0, 0">
+                    <Grid HorizontalAlignment="Stretch" 
+                          Background="#0071C1"
+                          Padding="40, 20, 0, 20">
                         <StackPanel Orientation="Vertical">
                             <TextBlock Text="My Experiment" 
                                        FontSize="48" 
                                        Margin="0, 0, 10, 0" 
                                        HorizontalAlignment="Left"
-                                       x:Name="ExpName" />
+                                       x:Name="ExpName" 
+                                       Foreground="#ffffff"/>
                             <TextBlock Text="Author"
                                        FontSize="24"
-                                       Foreground="#505050"
+                                       Foreground="#f0f0f0"
                                        x:Name="ExperimentAuthor"/>
                             <TextBlock Text="Created"
                                        FontSize="18"
-                                       Foreground="#a0a0a0"
+                                       Foreground="#f0f0f0"
                                        x:Name="ExperimentCreated"/>
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
+                        <StackPanel Orientation="Horizontal"  
+                                    VerticalAlignment="Top" HorizontalAlignment="Right">
                             <Button VerticalAlignment="Center"
                                     Content="&#xE118;"
                                     FontFamily="Segoe MDL2 Assets"
@@ -412,6 +525,7 @@
                                     FontSize="24"
                                     x:Name="Export"
                                     Click="Export_Click"
+                                    Foreground="#ffffff"
                                     ToolTipService.ToolTip="Export Experiment"/>
                             <Button VerticalAlignment="Center"
                                     Content="&#xE713;"
@@ -420,6 +534,7 @@
                                     Background="Transparent" 
                                     Margin="10, 10, 10, 10"
                                     Click="Experiment_Settings_Click"
+                                    Foreground="#ffffff"
                                     ToolTipService.ToolTip="Experiment Settings"/>
                             <Button VerticalAlignment="Center"
                                     Content="&#xE710;"
@@ -429,6 +544,7 @@
                                     Background="Transparent"
                                     Click="GetConnectedDevices"
                                     ToolTipService.ToolTip="Add Devices"
+                                    Foreground="#ffffff"
                                     />
                             <Button VerticalAlignment="Center"
                                     Content="&#xE768;"
@@ -438,10 +554,11 @@
                                     Margin="0, 10, 20, 10" 
                                     Click="Play_Click"
                                     ToolTipService.ToolTip="Play Experiment"
+                                    Foreground="#ffffff"
                                     x:Name="PlayExperimentButton"/>
                         </StackPanel>
                     </Grid>
-                    <Pivot x:Name="RootPivot" Margin="20, 20, 20, 20" VerticalAlignment="Stretch">
+                    <Pivot x:Name="RootPivot" Margin="20, 10, 20, 20" VerticalAlignment="Stretch">
                         <PivotItem Header="Problem" VerticalAlignment="Stretch">
                             <StackPanel Orientation="Vertical" Padding="10">
                                 <ListView x:Name="ProblemCards"

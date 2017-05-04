@@ -32,7 +32,8 @@
         </StackPanel>
         <StackPanel Orientation="Horizontal">
             <Button x:Name="MenuButtonAccount" FontFamily="Segoe MDL2 Assets" Content="&#xE77B;" BorderThickness="0"
-                        Width="60" Height="60" FontSize="24" Foreground="White" Background="Transparent"/>
+                    Width="60" Height="60" FontSize="24" Foreground="White" Background="Transparent"
+                    Click="MenuButtonAccount_Click"/>
             <TextBlock Text="My Account" FontSize="20" VerticalAlignment="Center" Foreground="White" Margin="10, 0, 0, 0"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal">

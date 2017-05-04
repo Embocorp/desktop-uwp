@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -24,6 +25,7 @@ namespace MultiporterC
     [XmlInclude(typeof(QuantitativeRelationshipNode))]
     [XmlInclude(typeof(MaterialNode))]
 
+
     public class ExperimentNode:BaseClass
     {
         public ExperimentNode(String name, String content, String cat)
@@ -38,6 +40,7 @@ namespace MultiporterC
         public string Name { set; get; }
         public string Content { set; get; }
         public string Category { set; get; }
+        [JsonIgnoreAttribute]
         public string Description { set; get; }
     }
 
@@ -67,6 +70,7 @@ namespace MultiporterC
         {
             Data.Add(d);
             Length++;
+            OnPropertyChanged("Data");
         }
 
         public void Add_Data_Set(DataPoint[] d)
@@ -143,6 +147,7 @@ namespace MultiporterC
         public int Unit { get; set; }
 
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public Measurement MeasureSource
         {
             get { return this.Measure; }
@@ -155,6 +160,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public int UnitSource
         {
             set
@@ -165,6 +171,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public string Measurement_Name
         {
             get
@@ -174,6 +181,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public string Unit_Name
         {
             get
@@ -184,6 +192,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public SolidColorBrush MF
         {
             get
@@ -193,6 +202,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public SolidColorBrush UF
         {
             get
@@ -202,6 +212,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public bool Unit_Exists
         {
             get { return Measure != null; }
@@ -296,6 +307,7 @@ namespace MultiporterC
         public int Subtype { get; set; }
 
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public Uri Rep {
             get
             {
@@ -309,6 +321,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public string Definition
         {
             get
@@ -325,6 +338,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public Visibility DefinitionVisibility
         {
             get
@@ -337,6 +351,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public string TypeString
         {
             get
@@ -346,6 +361,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public string SubtypeString
         {
             get
@@ -355,6 +371,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public QuantType TypeSource
         {
             set
@@ -371,6 +388,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public int SubtypeSource
         {
             set
@@ -382,6 +400,7 @@ namespace MultiporterC
                 OnPropertyChanged("Definition");
             }
         }
+        [JsonIgnoreAttribute]
         [XmlIgnoreAttribute]
         public bool SubtypeEnabled
         {
@@ -391,6 +410,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public Visibility ImageVisible
         {
             get
@@ -400,6 +420,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public string[][] SubtypeNames
         {
             get
@@ -476,6 +497,7 @@ namespace MultiporterC
         public int Quantity { get; set; }
 
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public string QuantityString
         {
             get
@@ -488,6 +510,7 @@ namespace MultiporterC
             }
         }
         [XmlIgnoreAttribute]
+        [JsonIgnoreAttribute]
         public BitmapImage B
         {
             get

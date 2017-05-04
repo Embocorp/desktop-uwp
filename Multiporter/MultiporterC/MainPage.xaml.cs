@@ -59,5 +59,10 @@ namespace MultiporterC
         {
             this.Frame.Navigate(typeof(Devices));
         }
+
+        private void Account_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(UserPage));
+        }
     }
 }

@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,27 +14,40 @@ namespace MultiporterC
 {
     class Serialize
     {
-        public static string Serialize_Object<T> (T obj)
+        public static string Xml_Serialize_Object<T>(T obj)
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(T));
+            XmlSerializer xsSubmit = new XmlSerializer(typeof(T));
+            var xml = "";
 
-            using (StringWriter writer = new StringWriter())
+            using (var sww = new StringWriter())
             {
-                serializer.Serialize(writer, obj);
-                return writer.ToString();
+                using (XmlWriter writer = XmlWriter.Create(sww))
+                {
+                    xsSubmit.Serialize(writer, obj);
+                    xml = sww.ToString(); // Your XML
+                    return xml;
+                }
             }
         }
 
-        public static object Deserialize_Object<T> (string contents)
-        {    
+        public static object Xml_Deserialize_Object<T>(string contents)
+        {
             XmlSerializer serializer = new XmlSerializer(typeof(T));
-            object result;
+            StringReader rdr = new StringReader(contents);
+            object output = (object)serializer.Deserialize(rdr);
+            return output;
+        }
 
-            using (StringReader reader = new StringReader(contents))
-            {
-                result = serializer.Deserialize(reader);
-                return result;
-            }
+        public static string Json_Serialize_Object<T> (T obj)
+        {
+            
+            return JsonConvert.SerializeObject(obj);
+        }
+
+        public static object Json_Deserialize_Object<T> (string contents)
+        {
+           
+            return JsonConvert.DeserializeObject<T>(contents);
         }
 
         public static async void SaveExperiment(Experiment e)
@@ -45,7 +60,7 @@ namespace MultiporterC
                 Windows.Storage.StorageFile sampleFile =
                     await storageFolder.CreateFileAsync(e.FileName + ".mport",
                     Windows.Storage.CreationCollisionOption.ReplaceExisting);
-                string serial = Serialize.Serialize_Object<Experiment>(e);
+                string serial = Serialize.Xml_Serialize_Object<Experiment>(e);
                 await Windows.Storage.FileIO.WriteBytesAsync(sampleFile, Encoding.UTF8.GetBytes(serial));
                 Debug.WriteLine(storageFolder.Path);
             });
@@ -70,7 +85,7 @@ namespace MultiporterC
                 {
                     try
                     {
-                        output = (List<Device>)Serialize.Deserialize_Object<List<Device>>(xml);
+                        output = (List<Device>)Serialize.Xml_Deserialize_Object<List<Device>>(xml);
                     }
                     catch (Exception e)
                     {
@@ -79,7 +94,7 @@ namespace MultiporterC
                 }
 
                 output.Add(d);
-                string serial = Serialize.Serialize_Object<List<Device>>(output);
+                string serial = Serialize.Xml_Serialize_Object<List<Device>>(output);
 
                 try
                 {
@@ -106,7 +121,7 @@ namespace MultiporterC
             {
                 try
                 {
-                    output = (List<Device>)Serialize.Deserialize_Object<List<Device>>(xml);
+                    output = (List<Device>)Serialize.Xml_Deserialize_Object<List<Device>>(xml);
                 }
                 catch (Exception e)
                 {
@@ -132,5 +147,29 @@ namespace MultiporterC
                 await Task.Delay(1000);
             }
         }
+    }
+    public static class ByteCompression
+    {
+        public static byte[] Compress(byte[] data)
+        {
+            MemoryStream output = new MemoryStream();
+            using (DeflateStream dstream = new DeflateStream(output, CompressionLevel.Optimal))
+            {
+                dstream.Write(data, 0, data.Length);
+            }
+            return output.ToArray();
+        }
+
+        public static byte[] Decompress(byte[] data)
+        {
+            MemoryStream input = new MemoryStream(data);
+            MemoryStream output = new MemoryStream();
+            using (DeflateStream dstream = new DeflateStream(input, CompressionMode.Decompress))
+            {
+                dstream.CopyTo(output);
+            }
+            return output.ToArray();
+        }
+
     }
 }

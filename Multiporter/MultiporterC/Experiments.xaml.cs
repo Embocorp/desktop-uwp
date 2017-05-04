@@ -59,6 +59,10 @@ namespace MultiporterC
                 OnlineExperimentsList.Items.Add(exp[i]);
             }
             OnlineLoading.Visibility = Visibility.Collapsed;
+            if ( exp.Length == 0 && Windows.Storage.ApplicationData.Current.LocalSettings.Values["usertoken"] == null)
+            {
+                Rex.Text = "You must be logged on to access this feature";
+            }
         }
 
         public void OpenExperiment(object sender, SelectionChangedEventArgs e)
@@ -81,7 +85,7 @@ namespace MultiporterC
                 string xml = await Windows.Storage.FileIO.ReadTextAsync(f);
                 try
                 {
-                    output.Add((Experiment)Serialize.Deserialize_Object<Experiment>(xml));
+                    output.Add((Experiment)Serialize.Xml_Deserialize_Object<Experiment>(xml));
                 }
                 catch (Exception e)
                 {
@@ -93,12 +97,19 @@ namespace MultiporterC
 
         private async Task<Experiment[]> LoadOnlineExperiments()
         {
-            await Task.Delay(2000);
-            return new Experiment[]
+            if (Windows.Storage.ApplicationData.Current.LocalSettings.Values["usertoken"] == null)
             {
+                return new Experiment[0];
+            }
+            else
+            {
+                await Task.Delay(2000);
+                return new Experiment[]
+                {
                 new Experiment("Christmas Tree Lights", "December 25, 2016", "Megan Brown"),
                 new Experiment("Humidity vs Barometric Pressure", "February 1, 2016", "Zainab Babikir")
-            };
+                };
+            }
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
@@ -121,9 +132,21 @@ namespace MultiporterC
 
         private void Create_Experiment_Click(object sender, RoutedEventArgs e)
         {
-            Experiment newExp = new Experiment(ExperimentName.Text, DateTime.Today.ToString("MMMM dd, yyyy"), "Theodore Kim");
-            newExp.FileName = DateTime.Today.ToString("yyyyMMddHHmmss");
-            Serialize.SaveExperiment(newExp);
+            object auth = Windows.Storage.ApplicationData.Current.LocalSettings.Values["username"];
+            string author;
+            if (auth == null)
+            {
+                author = "Anonymous";
+            }
+            else
+            {
+                author = (string)auth;
+            }
+            Experiment newExp = new Experiment(ExperimentName.Text, 
+                DateTime.Today.ToString("MMMM dd, yyyy"), 
+                author);
+            newExp.FileName = DateTime.Now.ToString("yyyyMMddHHmmss");
+            newExp.Create();
             this.Frame.Navigate(typeof(Explorer), newExp);
         }
     }
